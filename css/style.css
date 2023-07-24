@@ -871,7 +871,7 @@ svg:not(:root) {
 .contact .container .box {
   background-color: #fff;
   text-align: center;
-  padding: 25px 15px;
+  padding: 50px 15px 25px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
