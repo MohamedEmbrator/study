@@ -112,6 +112,7 @@ selection.onchange = function () {
   foreignBooks.style.margin = "0 0 0 15px";
   notes.style.margin = "0 0 0 15px";
   tips.style.margin = "0 0 0 15px";
+  form.style.direction = "rtl";
 };
 //  ------- -- ------- - ------- ------ ----- ------- ------
 if (window.localStorage.getItem("lang")) {
@@ -156,5 +157,6 @@ if (window.localStorage.getItem("lang")) {
   foreignBooks.style.margin = "0 0 0 15px";
   notes.style.margin = "0 0 0 15px";
   tips.style.margin = "0 0 0 15px";
+  form.style.direction = "rtl";
 }
 // End English And Arabic Switch
