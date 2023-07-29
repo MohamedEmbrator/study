@@ -39,3 +39,33 @@ let navBar = document.getElementById("nav");
 toggleBtn.addEventListener("click", function () {
   navBar.classList.toggle("show");
 });
+
+// Start English And Arabic Switch
+let selection = document.querySelector("header.header .container > select");
+let landingTitle = document.querySelector(
+  ".landing .container .content .text h1"
+);
+selection.onchange = function () {
+  window.localStorage.setItem("lang", selection.value);
+  if (window.localStorage.getItem("lang") === "en") {
+    selection.value = window.localStorage.getItem("lang");
+    document.title = "Outstanding Platform | Home Page";
+    landingTitle.innerHTML = "Welcome To The Outstanding Platform";
+  } else if (window.localStorage.getItem("lang") === "ar") {
+    selection.value = window.localStorage.getItem("lang");
+    document.title = "منصة المتفوقين | الصفحة الرئيسية";
+    landingTitle.innerHTML = "مرحباً بكم في منصة المتفوقين";
+  }
+};
+//  ------- -- ------- - ------- ------ ----- ------- ------
+if (window.localStorage.getItem("lang")) {
+  selection.value = window.localStorage.getItem("lang");
+  if (window.localStorage.getItem("lang") === "en") {
+    document.title = "Outstanding Platform | Home Page";
+    landingTitle.innerHTML = "Welcome To The Outstanding Platform";
+  } else if (window.localStorage.getItem("lang") === "ar") {
+    document.title = "منصة المتفوقين | الصفحة الرئيسية";
+    landingTitle.innerHTML = "مرحباً بكم في منصة المتفوقين";
+  }
+}
+// End English And Arabic Switch
