@@ -61,7 +61,12 @@ let notes = document.querySelector(
 let tips = document.querySelector(
   "header.header .container > nav.nav > .advices > div > span"
 );
-// let searchBoxPlaceHolder = document.querySelector("")
+let searchBoxPlaceHolder = document.querySelector(
+  ".landing .container form input[type='search']"
+);
+let searchSubmit = document.querySelector(
+  ".landing .container form input[type='submit']"
+);
 
 selection.onchange = function () {
   window.localStorage.setItem("lang", selection.value);
@@ -72,11 +77,19 @@ selection.onchange = function () {
     landingTitle.innerHTML = "Welcome To The Outstanding Platform";
     logo.innerHTML = "Outstanding Platform";
     schoolBooksHome.innerHTML = "School Books";
+    schoolBooksHome.style.margin = "0 15px 0 0";
     platformDescription.innerHTML =
       "The Outstanding Platform is a sophisticated and practical platform that will help you in your studies, and you will find books and notes for all levels of study, whether you are in Al-Azhar or Global Education, and you will find links to many teachers in all subjects on YouTube without having to waste time searching for them";
     foreignBooks.innerHTML = "Extra Books";
     notes.innerHTML = "Notes";
     tips.innerHTML = "Tips And Information";
+    searchBoxPlaceHolder.placeholder = "Search The Platform";
+    searchSubmit.value = "Search";
+    document.querySelector("header.header .container .logo img").style.margin =
+      "0 5px 0 0";
+    foreignBooks.style.margin = "0 15px 0 0";
+    notes.style.margin = "0 15px 0 0";
+    tips.style.margin = "0 15px 0 0";
   } else if (window.localStorage.getItem("lang") === "ar") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "rtl";
@@ -84,12 +97,20 @@ selection.onchange = function () {
     landingTitle.innerHTML = "مرحباً بكم في منصة المتفوقين";
     logo.innerHTML = "منصة المتفوقين";
     schoolBooksHome.innerHTML = "الكتب المدرسية";
+    schoolBooksHome.style.margin = "0 0 0 15px";
     platformDescription.innerHTML =
       "منصة المتفوقين هي منصة متطورة وعملية وستساعدك في دراستك وسوف تجد فيها كتب ومذكرات لجميع المراحل الدراسية سواء كنت في الأزهر أو التربية والتعليم وسوف تجد روابط لمعلمين كثر في جميع المواد على اليوتيوب بدون أن تضطر لتضييع الوقت في البحث عنهم";
     foreignBooks.innerHTML = "الكتب الخارجية";
     notes.innerHTML = "الملازم والمذكرات";
     tips.innerHTML = "منوع";
+    searchBoxPlaceHolder.placeholder = "البحث في المنصة";
+    searchSubmit.value = "البحث";
+    document.querySelector("header.header .container .logo img").style.margin =
+      "0 0 0 5px";
   }
+  foreignBooks.style.margin = "0 0 0 15px";
+  notes.style.margin = "0 0 0 15px";
+  tips.style.margin = "0 0 0 15px";
 };
 //  ------- -- ------- - ------- ------ ----- ------- ------
 if (window.localStorage.getItem("lang")) {
@@ -105,6 +126,14 @@ if (window.localStorage.getItem("lang")) {
     schoolBooksHome.innerHTML = "School Books";
     notes.innerHTML = "Notes";
     tips.innerHTML = "Tips And Information";
+    searchBoxPlaceHolder.placeholder = "Search The Platform";
+    searchSubmit.value = "Search";
+    document.querySelector("header.header .container .logo img").style.margin =
+      "0 5px 0 0";
+    schoolBooksHome.style.margin = "0 15px 0 0";
+    foreignBooks.style.margin = "0 15px 0 0";
+    notes.style.margin = "0 15px 0 0";
+    tips.style.margin = "0 15px 0 0";
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
     document.title = "منصة المتفوقين | الصفحة الرئيسية";
@@ -116,6 +145,14 @@ if (window.localStorage.getItem("lang")) {
     foreignBooks.innerHTML = "الكتب الخارجية";
     notes.innerHTML = "الملازم والمذكرات";
     tips.innerHTML = "منوع";
+    searchBoxPlaceHolder.placeholder = "البحث في المنصة";
+    searchSubmit.value = "البحث";
+    document.querySelector("header.header .container .logo img").style.margin =
+      "0 0 0 5px";
   }
+  schoolBooksHome.style.margin = "0 0 0 15px";
+  foreignBooks.style.margin = "0 0 0 15px";
+  notes.style.margin = "0 0 0 15px";
+  tips.style.margin = "0 0 0 15px";
 }
 // End English And Arabic Switch
