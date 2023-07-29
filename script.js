@@ -67,7 +67,7 @@ let searchBoxPlaceHolder = document.querySelector(
 let searchSubmit = document.querySelector(
   ".landing .container form input[type='submit']"
 );
-
+let form = document.querySelector(".landing .container form");
 selection.onchange = function () {
   window.localStorage.setItem("lang", selection.value);
   if (window.localStorage.getItem("lang") === "en") {
@@ -90,6 +90,7 @@ selection.onchange = function () {
     foreignBooks.style.margin = "0 15px 0 0";
     notes.style.margin = "0 15px 0 0";
     tips.style.margin = "0 15px 0 0";
+    form.style.direction = "rtl";
   } else if (window.localStorage.getItem("lang") === "ar") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "rtl";
@@ -134,6 +135,7 @@ if (window.localStorage.getItem("lang")) {
     foreignBooks.style.margin = "0 15px 0 0";
     notes.style.margin = "0 15px 0 0";
     tips.style.margin = "0 15px 0 0";
+    form.style.direction = "rtl";
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
     document.title = "منصة المتفوقين | الصفحة الرئيسية";
