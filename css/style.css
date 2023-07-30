@@ -1,3 +1,18 @@
+.landing .container form input[type="submit"] {
+  height: 40px;
+  width: 80px;
+  background-color: var(--main-color);
+  border: none;
+  font-size: 18px;
+  z-index: 2;
+  font-weight: bold;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -545,20 +560,7 @@ header.header .container > nav.nav.show {
   -webkit-appearance: none;
   appearance: none;
 }
-.landing .container form input[type="submit"] {
-  height: 40px;
-  width: 80px;
-  background-color: var(--main-color);
-  border: none;
-  font-size: 18px;
-  z-index: 2;
-  font-weight: bold;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  color: #fff;
-  cursor: pointer;
-}
+
 
 @media (max-width: 767px) {
   .landing {
