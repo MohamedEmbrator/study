@@ -68,6 +68,15 @@ let searchBoxPlaceHolder = document.querySelector(
 let searchSubmit = document.querySelector(
   ".landing .container form input[type='submit']"
 );
+let primarySchoolBooksToggle = document.querySelector(
+  "header.header .container nav > div > div > ul li a:first-child"
+);
+let prepSchoolBooksToggle = document.querySelector(
+  "header.header .container nav > div > div > ul li:nth-child(2) a"
+);
+let secSchoolBooksToggle = document.querySelector(
+  "header.header .container nav > div > div > ul li:nth-child(3) a"
+);
 let form = document.querySelector(".landing .container form");
 let secThreeMainTitle = document.querySelector(".articles > .main-title");
 selection.onchange = function () {
@@ -97,6 +106,9 @@ selection.onchange = function () {
     document.styleSheets[3].rules[0].style.setProperty("right", "10px");
     searchBoxPlaceHolder.style.padding = "20px 95px 20px 20px";
     secThreeMainTitle.innerHTML = "Online Lessons | Secondary Three";
+    primarySchoolBooksToggle.innerHTML = "Primary Level";
+    prepSchoolBooksToggle.innerHTML = "Preparatory Level";
+    secSchoolBooksToggle.innerHTML = "Secondary Level";
   } else if (window.localStorage.getItem("lang") === "ar") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "rtl";
@@ -122,6 +134,9 @@ selection.onchange = function () {
     document.styleSheets[3].rules[0].style.setProperty("left", "10px");
     searchBoxPlaceHolder.style.padding = "20px 20px 20px 95px";
     secThreeMainTitle.innerHTML = "الدروس الأونلاين | الثالث الثانوي";
+    primarySchoolBooksToggle.innerHTML = "المرحلة الإبتدائية";
+    prepSchoolBooksToggle.innerHTML = "المرحلة الإعدادية";
+    secSchoolBooksToggle.innerHTML = "المرحلة الثانوية";
   }
 };
 //  ------- -- ------- - ------- ------ ----- ------- ------
@@ -151,6 +166,9 @@ if (window.localStorage.getItem("lang")) {
     document.styleSheets[3].rules[0].style.setProperty("right", "10px");
     searchBoxPlaceHolder.style.padding = "20px 95px 20px 20px";
     secThreeMainTitle.innerHTML = "Online Lessons | Secondary Three";
+    primarySchoolBooksToggle.innerHTML = "Primary Level";
+    prepSchoolBooksToggle.innerHTML = "Preparatory Level";
+    secSchoolBooksToggle.innerHTML = "Secondary Level";
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
     document.title = "منصة المتفوقين | الصفحة الرئيسية";
@@ -175,6 +193,9 @@ if (window.localStorage.getItem("lang")) {
     document.styleSheets[3].rules[0].style.setProperty("left", "10px");
     searchBoxPlaceHolder.style.padding = "20px 20px 20px 95px";
     secThreeMainTitle.innerHTML = "الدروس الأونلاين | الثالث الثانوي";
+    primarySchoolBooksToggle.innerHTML = "المرحلة الإبتدائية";
+    prepSchoolBooksToggle.innerHTML = "المرحلة الإعدادية";
+    secSchoolBooksToggle.innerHTML = "المرحلة الثانوية";
   }
 }
 // End English And Arabic Switch
