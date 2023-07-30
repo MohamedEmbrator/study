@@ -149,6 +149,10 @@ selection.onchange = function () {
     document.styleSheets[3].rules[1].style.setProperty("right", "0");
     document.styleSheets[3].rules[2].style.removeProperty("right");
     document.styleSheets[3].rules[2].style.setProperty("left", "0");
+    document.styleSheets[3].rules[3].style.removeProperty("right");
+    document.styleSheets[3].rules[3].style.setProperty("left", "0");
+    document.styleSheets[3].rules[4].style.removeProperty("right");
+    document.styleSheets[3].rules[4].style.setProperty("left", "0");
   } else if (window.localStorage.getItem("lang") === "ar") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "rtl";
@@ -190,6 +194,10 @@ selection.onchange = function () {
     document.styleSheets[3].rules[1].style.setProperty("left", "0");
     document.styleSheets[3].rules[2].style.removeProperty("left");
     document.styleSheets[3].rules[2].style.setProperty("right", "0");
+    document.styleSheets[3].rules[3].style.removeProperty("left");
+    document.styleSheets[3].rules[3].style.setProperty("right", "0");
+    document.styleSheets[3].rules[4].style.removeProperty("left");
+    document.styleSheets[3].rules[4].style.setProperty("right", "0");
   }
 };
 //  ------- -- ------- - ------- ------ ----- ------- ------
@@ -235,6 +243,10 @@ if (window.localStorage.getItem("lang")) {
     document.styleSheets[3].rules[1].style.setProperty("right", "0");
     document.styleSheets[3].rules[2].style.removeProperty("right");
     document.styleSheets[3].rules[2].style.setProperty("left", "0");
+    document.styleSheets[3].rules[3].style.removeProperty("right");
+    document.styleSheets[3].rules[3].style.setProperty("left", "0");
+    document.styleSheets[3].rules[4].style.removeProperty("right");
+    document.styleSheets[3].rules[4].style.setProperty("left", "0");
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
     document.title = "منصة المتفوقين | الصفحة الرئيسية";
@@ -275,6 +287,10 @@ if (window.localStorage.getItem("lang")) {
     document.styleSheets[3].rules[1].style.setProperty("left", "0");
     document.styleSheets[3].rules[2].style.removeProperty("left");
     document.styleSheets[3].rules[2].style.setProperty("right", "0");
+    document.styleSheets[3].rules[3].style.removeProperty("left");
+    document.styleSheets[3].rules[3].style.setProperty("right", "0");
+    document.styleSheets[3].rules[4].style.removeProperty("left");
+    document.styleSheets[3].rules[4].style.setProperty("right", "0");
   }
 }
 // End English And Arabic Switch
