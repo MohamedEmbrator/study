@@ -77,6 +77,24 @@ let prepSchoolBooksToggle = document.querySelector(
 let secSchoolBooksToggle = document.querySelector(
   "header.header .container nav > div > div > ul li:nth-child(3) a"
 );
+let primaryExtraBooksToggle = document.querySelector(
+  "header.header .container nav > .out > div > ul li:first-child a"
+);
+let prepExtraBooksToggle = document.querySelector(
+  "header.header .container nav > .out > div > ul li:nth-child(2) a"
+);
+let secOneExtraBooksToggle = document.querySelector(
+  "header.header .container nav > .out > div > ul li:nth-child(3) a"
+);
+let secTwoExtraBooksToggle = document.querySelector(
+  "header.header .container nav > .out > div > ul li:nth-child(4) a"
+);
+let secThreeExtraBooksToggle = document.querySelector(
+  "header.header .container nav > .out > div > ul li:nth-child(5) a"
+);
+let secThreeNotes = document.querySelector(
+  "header.header .container nav > .access > div > ul li:first-child a"
+);
 let form = document.querySelector(".landing .container form");
 let secThreeMainTitle = document.querySelector(".articles > .main-title");
 selection.onchange = function () {
@@ -109,6 +127,12 @@ selection.onchange = function () {
     primarySchoolBooksToggle.innerHTML = "Primary Level";
     prepSchoolBooksToggle.innerHTML = "Preparatory Level";
     secSchoolBooksToggle.innerHTML = "Secondary Level";
+    primaryExtraBooksToggle.innerHTML = "Primary Level";
+    prepExtraBooksToggle.innerHTML = "Preparatory Level";
+    secOneExtraBooksToggle.innerHTML = "Secondary One";
+    secTwoExtraBooksToggle.innerHTML = "Secondary Two";
+    secThreeExtraBooksToggle.innerHTML = "Secondary Three";
+    secThreeNotes.innerHTML = "Secondary Three";
   } else if (window.localStorage.getItem("lang") === "ar") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "rtl";
@@ -137,6 +161,12 @@ selection.onchange = function () {
     primarySchoolBooksToggle.innerHTML = "المرحلة الإبتدائية";
     prepSchoolBooksToggle.innerHTML = "المرحلة الإعدادية";
     secSchoolBooksToggle.innerHTML = "المرحلة الثانوية";
+    primaryExtraBooksToggle.innerHTML = "المرحلة الإبتدائية";
+    prepExtraBooksToggle.innerHTML = "المرحلة الإعدادية";
+    secOneExtraBooksToggle.innerHTML = "الصف الأول الثانوي";
+    secTwoExtraBooksToggle.innerHTML = "الصف الثاني الثانوي";
+    secThreeExtraBooksToggle.innerHTML = "الصف الثالث الثانوي";
+    secThreeNotes.innerHTML = "الصف الثالث الثانوي";
   }
 };
 //  ------- -- ------- - ------- ------ ----- ------- ------
@@ -169,6 +199,12 @@ if (window.localStorage.getItem("lang")) {
     primarySchoolBooksToggle.innerHTML = "Primary Level";
     prepSchoolBooksToggle.innerHTML = "Preparatory Level";
     secSchoolBooksToggle.innerHTML = "Secondary Level";
+    primaryExtraBooksToggle.innerHTML = "Primary Level";
+    prepExtraBooksToggle.innerHTML = "Preparatory Level";
+    secOneExtraBooksToggle.innerHTML = "Secondary One";
+    secTwoExtraBooksToggle.innerHTML = "Secondary Two";
+    secThreeExtraBooksToggle.innerHTML = "Secondary Three";
+    secThreeNotes.innerHTML = "Secondary Three";
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
     document.title = "منصة المتفوقين | الصفحة الرئيسية";
@@ -196,6 +232,12 @@ if (window.localStorage.getItem("lang")) {
     primarySchoolBooksToggle.innerHTML = "المرحلة الإبتدائية";
     prepSchoolBooksToggle.innerHTML = "المرحلة الإعدادية";
     secSchoolBooksToggle.innerHTML = "المرحلة الثانوية";
+    primaryExtraBooksToggle.innerHTML = "المرحلة الإبتدائية";
+    prepExtraBooksToggle.innerHTML = "المرحلة الإعدادية";
+    secOneExtraBooksToggle.innerHTML = "الصف الأول الثانوي";
+    secTwoExtraBooksToggle.innerHTML = "الصف الثاني الثانوي";
+    secThreeExtraBooksToggle.innerHTML = "الصف الثالث الثانوي";
+    secThreeNotes.innerHTML = "الصف الثالث الثانوي";
   }
 }
 // End English And Arabic Switch
