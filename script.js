@@ -41,6 +41,7 @@ window.onscroll = function () {
 };
 
 // Start English And Arabic Switch
+
 let selection = document.querySelector("header.header .container > select");
 let landingTitle = document.querySelector(
   ".landing .container .content .text h1"
@@ -90,7 +91,10 @@ selection.onchange = function () {
     foreignBooks.style.margin = "0 15px 0 0";
     notes.style.margin = "0 15px 0 0";
     tips.style.margin = "0 15px 0 0";
-    form.style.direction = "rtl";
+    form.style.direction = "ltr";
+    document.styleSheets[3].rules[0].style.removeProperty("left");
+    document.styleSheets[3].rules[0].style.setProperty("right", "10px");
+    searchBoxPlaceHolder.style.padding = "20px 95px 20px 20px";
   } else if (window.localStorage.getItem("lang") === "ar") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "rtl";
@@ -108,11 +112,14 @@ selection.onchange = function () {
     searchSubmit.value = "البحث";
     document.querySelector("header.header .container .logo img").style.margin =
       "0 0 0 5px";
+    foreignBooks.style.margin = "0 0 0 15px";
+    notes.style.margin = "0 0 0 15px";
+    tips.style.margin = "0 0 0 15px";
+    form.style.direction = "rtl";
+    document.styleSheets[3].rules[0].style.removeProperty("right");
+    document.styleSheets[3].rules[0].style.setProperty("left", "10px");
+    searchBoxPlaceHolder.style.padding = "20px 20px 20px 95px";
   }
-  foreignBooks.style.margin = "0 0 0 15px";
-  notes.style.margin = "0 0 0 15px";
-  tips.style.margin = "0 0 0 15px";
-  form.style.direction = "rtl";
 };
 //  ------- -- ------- - ------- ------ ----- ------- ------
 if (window.localStorage.getItem("lang")) {
@@ -136,7 +143,10 @@ if (window.localStorage.getItem("lang")) {
     foreignBooks.style.margin = "0 15px 0 0";
     notes.style.margin = "0 15px 0 0";
     tips.style.margin = "0 15px 0 0";
-    form.style.direction = "rtl";
+    form.style.direction = "ltr";
+    document.styleSheets[3].rules[0].style.removeProperty("left");
+    document.styleSheets[3].rules[0].style.setProperty("right", "10px");
+    searchBoxPlaceHolder.style.padding = "20px 95px 20px 20px";
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
     document.title = "منصة المتفوقين | الصفحة الرئيسية";
@@ -158,5 +168,8 @@ if (window.localStorage.getItem("lang")) {
   notes.style.margin = "0 0 0 15px";
   tips.style.margin = "0 0 0 15px";
   form.style.direction = "rtl";
+  document.styleSheets[3].rules[0].style.removeProperty("right");
+  document.styleSheets[3].rules[0].style.setProperty("left", "10px");
+  searchBoxPlaceHolder.style.padding = "20px 20px 20px 95px";
 }
 // End English And Arabic Switch
