@@ -18,6 +18,12 @@ header.header .container nav > div:last-child > div > ul {
 header.header .container nav > div:first-child > div > ul {
   right: 0;
 }
+header.header .container nav > div:nth-child(2) > div > ul {
+  right: 0;
+}
+header.header .container nav > div:nth-child(3) > div > ul {
+  right: 0;
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -412,14 +418,6 @@ header.header .container nav > div > .active > ul li:hover {
 header.header .container nav > div:first-child > div > ul li:last-child span {
   font-size: 12px;
 }
-
-header.header .container nav > div:nth-child(2) > div > ul {
-  right: 0;
-}
-header.header .container nav > div:nth-child(3) > div > ul {
-  right: 0;
-}
-
 header.header .container nav > div > .active {
   background-color: #2d3642;
   padding: 10px 10px 10px 10px;
