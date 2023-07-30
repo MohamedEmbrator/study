@@ -69,6 +69,7 @@ let searchSubmit = document.querySelector(
   ".landing .container form input[type='submit']"
 );
 let form = document.querySelector(".landing .container form");
+let secThreeMainTitle = document.querySelector(".articles > .main-title");
 selection.onchange = function () {
   window.localStorage.setItem("lang", selection.value);
   if (window.localStorage.getItem("lang") === "en") {
@@ -95,6 +96,7 @@ selection.onchange = function () {
     document.styleSheets[3].rules[0].style.removeProperty("left");
     document.styleSheets[3].rules[0].style.setProperty("right", "10px");
     searchBoxPlaceHolder.style.padding = "20px 95px 20px 20px";
+    secThreeMainTitle.innerHTML = "Online Lessons | Secondary Three";
   } else if (window.localStorage.getItem("lang") === "ar") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "rtl";
@@ -119,6 +121,7 @@ selection.onchange = function () {
     document.styleSheets[3].rules[0].style.removeProperty("right");
     document.styleSheets[3].rules[0].style.setProperty("left", "10px");
     searchBoxPlaceHolder.style.padding = "20px 20px 20px 95px";
+    secThreeMainTitle.innerHTML = "الدروس الأونلاين | الثالث الثانوي";
   }
 };
 //  ------- -- ------- - ------- ------ ----- ------- ------
@@ -147,6 +150,7 @@ if (window.localStorage.getItem("lang")) {
     document.styleSheets[3].rules[0].style.removeProperty("left");
     document.styleSheets[3].rules[0].style.setProperty("right", "10px");
     searchBoxPlaceHolder.style.padding = "20px 95px 20px 20px";
+    secThreeMainTitle.innerHTML = "Online Lessons | Secondary Three";
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
     document.title = "منصة المتفوقين | الصفحة الرئيسية";
@@ -162,14 +166,15 @@ if (window.localStorage.getItem("lang")) {
     searchSubmit.value = "البحث";
     document.querySelector("header.header .container .logo img").style.margin =
       "0 0 0 5px";
+    schoolBooksHome.style.margin = "0 0 0 15px";
+    foreignBooks.style.margin = "0 0 0 15px";
+    notes.style.margin = "0 0 0 15px";
+    tips.style.margin = "0 0 0 15px";
+    form.style.direction = "rtl";
+    document.styleSheets[3].rules[0].style.removeProperty("right");
+    document.styleSheets[3].rules[0].style.setProperty("left", "10px");
+    searchBoxPlaceHolder.style.padding = "20px 20px 20px 95px";
+    secThreeMainTitle.innerHTML = "الدروس الأونلاين | الثالث الثانوي";
   }
-  schoolBooksHome.style.margin = "0 0 0 15px";
-  foreignBooks.style.margin = "0 0 0 15px";
-  notes.style.margin = "0 0 0 15px";
-  tips.style.margin = "0 0 0 15px";
-  form.style.direction = "rtl";
-  document.styleSheets[3].rules[0].style.removeProperty("right");
-  document.styleSheets[3].rules[0].style.setProperty("left", "10px");
-  searchBoxPlaceHolder.style.padding = "20px 20px 20px 95px";
 }
 // End English And Arabic Switch
