@@ -95,6 +95,15 @@ let secThreeExtraBooksToggle = document.querySelector(
 let secThreeNotes = document.querySelector(
   "header.header .container nav > .access > div > ul li:first-child a"
 );
+let schoolTips = document.querySelector(
+  "header.header .container nav > .advices > div > ul li:first-child a"
+);
+let schoolarshipTips = document.querySelector(
+  "header.header .container nav > .advices > div > ul li:nth-child(2) a"
+);
+let moreInformation = document.querySelector(
+  "header.header .container nav > .advices > div > ul li:nth-child(3) a"
+);
 let form = document.querySelector(".landing .container form");
 let secThreeMainTitle = document.querySelector(".articles > .main-title");
 selection.onchange = function () {
@@ -133,6 +142,9 @@ selection.onchange = function () {
     secTwoExtraBooksToggle.innerHTML = "Secondary Two";
     secThreeExtraBooksToggle.innerHTML = "Secondary Three";
     secThreeNotes.innerHTML = "Secondary Three";
+    schoolTips.innerHTML = "Study Tips And Motivation";
+    schoolarshipTips.innerHTML = "Information About Scholarships";
+    moreInformation.innerHTML = "Miscellaneous Articles";
   } else if (window.localStorage.getItem("lang") === "ar") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "rtl";
@@ -167,6 +179,9 @@ selection.onchange = function () {
     secTwoExtraBooksToggle.innerHTML = "الصف الثاني الثانوي";
     secThreeExtraBooksToggle.innerHTML = "الصف الثالث الثانوي";
     secThreeNotes.innerHTML = "الصف الثالث الثانوي";
+    schoolTips.innerHTML = "نصائح وتحفيز للدراسة";
+    schoolarshipTips.innerHTML = "معلومات عن المنح الدراسية";
+    moreInformation.innerHTML = "مقالات وقصص متنوعة";
   }
 };
 //  ------- -- ------- - ------- ------ ----- ------- ------
@@ -205,6 +220,9 @@ if (window.localStorage.getItem("lang")) {
     secTwoExtraBooksToggle.innerHTML = "Secondary Two";
     secThreeExtraBooksToggle.innerHTML = "Secondary Three";
     secThreeNotes.innerHTML = "Secondary Three";
+    schoolTips.innerHTML = "Study Tips And Motivation";
+    schoolarshipTips.innerHTML = "Information About Scholarships";
+    moreInformation.innerHTML = "Miscellaneous Articles";
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
     document.title = "منصة المتفوقين | الصفحة الرئيسية";
@@ -238,6 +256,9 @@ if (window.localStorage.getItem("lang")) {
     secTwoExtraBooksToggle.innerHTML = "الصف الثاني الثانوي";
     secThreeExtraBooksToggle.innerHTML = "الصف الثالث الثانوي";
     secThreeNotes.innerHTML = "الصف الثالث الثانوي";
+    schoolTips.innerHTML = "نصائح وتحفيز للدراسة";
+    schoolarshipTips.innerHTML = "معلومات عن المنح الدراسية";
+    moreInformation.innerHTML = "مقالات وقصص متنوعة";
   }
 }
 // End English And Arabic Switch
