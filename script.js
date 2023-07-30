@@ -145,6 +145,8 @@ selection.onchange = function () {
     schoolTips.innerHTML = "Study Tips And Motivation";
     schoolarshipTips.innerHTML = "Information About Scholarships";
     moreInformation.innerHTML = "Miscellaneous Articles";
+    document.styleSheets[3].rules[1].style.removeProperty("left");
+    document.styleSheets[3].rules[1].style.setProperty("right", "0");
   } else if (window.localStorage.getItem("lang") === "ar") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "rtl";
@@ -182,6 +184,8 @@ selection.onchange = function () {
     schoolTips.innerHTML = "نصائح وتحفيز للدراسة";
     schoolarshipTips.innerHTML = "معلومات عن المنح الدراسية";
     moreInformation.innerHTML = "مقالات وقصص متنوعة";
+    document.styleSheets[3].rules[1].style.removeProperty("right");
+    document.styleSheets[3].rules[1].style.setProperty("left", "0");
   }
 };
 //  ------- -- ------- - ------- ------ ----- ------- ------
@@ -223,6 +227,8 @@ if (window.localStorage.getItem("lang")) {
     schoolTips.innerHTML = "Study Tips And Motivation";
     schoolarshipTips.innerHTML = "Information About Scholarships";
     moreInformation.innerHTML = "Miscellaneous Articles";
+    document.styleSheets[3].rules[1].style.removeProperty("left");
+    document.styleSheets[3].rules[1].style.setProperty("right", "0");
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
     document.title = "منصة المتفوقين | الصفحة الرئيسية";
@@ -259,6 +265,8 @@ if (window.localStorage.getItem("lang")) {
     schoolTips.innerHTML = "نصائح وتحفيز للدراسة";
     schoolarshipTips.innerHTML = "معلومات عن المنح الدراسية";
     moreInformation.innerHTML = "مقالات وقصص متنوعة";
+    document.styleSheets[3].rules[1].style.removeProperty("right");
+    document.styleSheets[3].rules[1].style.setProperty("left", "0");
   }
 }
 // End English And Arabic Switch
