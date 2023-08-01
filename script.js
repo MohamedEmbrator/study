@@ -153,6 +153,7 @@ selection.onchange = function () {
     document.styleSheets[3].rules[3].style.setProperty("left", "0");
     document.styleSheets[3].rules[4].style.removeProperty("right");
     document.styleSheets[3].rules[4].style.setProperty("left", "0");
+    schoolarshipTips.href = "https://platform-scholarships-en.blogspot.com/";
   } else if (window.localStorage.getItem("lang") === "ar") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "rtl";
@@ -198,6 +199,7 @@ selection.onchange = function () {
     document.styleSheets[3].rules[3].style.setProperty("right", "0");
     document.styleSheets[3].rules[4].style.removeProperty("left");
     document.styleSheets[3].rules[4].style.setProperty("right", "0");
+    schoolarshipTips.href = "https://scholarships-ar.blogspot.com/";
   }
 };
 //  ------- -- ------- - ------- ------ ----- ------- ------
@@ -247,6 +249,7 @@ if (window.localStorage.getItem("lang")) {
     document.styleSheets[3].rules[3].style.setProperty("left", "0");
     document.styleSheets[3].rules[4].style.removeProperty("right");
     document.styleSheets[3].rules[4].style.setProperty("left", "0");
+    schoolarshipTips.href = "https://platform-scholarships-en.blogspot.com/";
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
     document.title = "منصة المتفوقين | الصفحة الرئيسية";
@@ -291,6 +294,7 @@ if (window.localStorage.getItem("lang")) {
     document.styleSheets[3].rules[3].style.setProperty("right", "0");
     document.styleSheets[3].rules[4].style.removeProperty("left");
     document.styleSheets[3].rules[4].style.setProperty("right", "0");
+    schoolarshipTips.href = "https://scholarships-ar.blogspot.com/";
   }
 }
 // End English And Arabic Switch
