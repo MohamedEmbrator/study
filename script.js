@@ -101,9 +101,6 @@ let schoolTips = document.querySelector(
 let schoolarshipTips = document.querySelector(
   "header.header .container nav > .advices > div > ul li:nth-child(2) a"
 );
-let moreInformation = document.querySelector(
-  "header.header .container nav > .advices > div > ul li:nth-child(3) a"
-);
 let form = document.querySelector(".landing .container form");
 let secThreeMainTitle = document.querySelector(".articles > .main-title");
 selection.onchange = function () {
@@ -144,7 +141,6 @@ selection.onchange = function () {
     secThreeNotes.innerHTML = "Secondary Three";
     schoolTips.innerHTML = "Study Tips And Motivation";
     schoolarshipTips.innerHTML = "Information About Scholarships";
-    moreInformation.innerHTML = "Miscellaneous Articles";
     document.styleSheets[3].rules[1].style.removeProperty("left");
     document.styleSheets[3].rules[1].style.setProperty("right", "0");
     document.styleSheets[3].rules[2].style.removeProperty("right");
@@ -190,7 +186,6 @@ selection.onchange = function () {
     secThreeNotes.innerHTML = "الصف الثالث الثانوي";
     schoolTips.innerHTML = "نصائح وتحفيز للدراسة";
     schoolarshipTips.innerHTML = "معلومات عن المنح الدراسية";
-    moreInformation.innerHTML = "مقالات وقصص متنوعة";
     document.styleSheets[3].rules[1].style.removeProperty("right");
     document.styleSheets[3].rules[1].style.setProperty("left", "0");
     document.styleSheets[3].rules[2].style.removeProperty("left");
@@ -240,7 +235,6 @@ if (window.localStorage.getItem("lang")) {
     secThreeNotes.innerHTML = "Secondary Three";
     schoolTips.innerHTML = "Study Tips And Motivation";
     schoolarshipTips.innerHTML = "Information About Scholarships";
-    moreInformation.innerHTML = "Miscellaneous Articles";
     document.styleSheets[3].rules[1].style.removeProperty("left");
     document.styleSheets[3].rules[1].style.setProperty("right", "0");
     document.styleSheets[3].rules[2].style.removeProperty("right");
@@ -285,7 +279,6 @@ if (window.localStorage.getItem("lang")) {
     secThreeNotes.innerHTML = "الصف الثالث الثانوي";
     schoolTips.innerHTML = "نصائح وتحفيز للدراسة";
     schoolarshipTips.innerHTML = "معلومات عن المنح الدراسية";
-    moreInformation.innerHTML = "مقالات وقصص متنوعة";
     document.styleSheets[3].rules[1].style.removeProperty("right");
     document.styleSheets[3].rules[1].style.setProperty("left", "0");
     document.styleSheets[3].rules[2].style.removeProperty("left");
