@@ -108,13 +108,13 @@ selection.onchange = function () {
   if (window.localStorage.getItem("lang") === "en") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "ltr";
-    document.title = "Outstanding Platform | Home Page";
+    document.title = "Cactu's EduLife Platform | Home Page";
     landingTitle.innerHTML = "Welcome To The Outstanding Platform";
-    logo.innerHTML = "Outstanding Platform";
+    logo.innerHTML = "Cactu's EduLife Platform";
     schoolBooksHome.innerHTML = "School Books";
     schoolBooksHome.style.margin = "0 15px 0 0";
     platformDescription.innerHTML =
-      "The Outstanding Platform is a sophisticated and practical platform that will help you in your studies, and you will find books and notes for all levels of study, whether you are in Al-Azhar or Global Education, and you will find links to many teachers in all subjects on YouTube without having to waste time searching for them";
+      "The Cactu's EduLife Platform is a sophisticated and practical platform that will help you in your studies, and you will find books and notes for all levels of study, whether you are in Al-Azhar or Global Education, and you will find links to many teachers in all subjects on YouTube without having to waste time searching for them";
     foreignBooks.innerHTML = "Extra Books";
     notes.innerHTML = "Notes";
     tips.innerHTML = "Tips And Information";
@@ -153,13 +153,13 @@ selection.onchange = function () {
   } else if (window.localStorage.getItem("lang") === "ar") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "rtl";
-    document.title = "منصة المتفوقين | الصفحة الرئيسية";
-    landingTitle.innerHTML = "مرحباً بكم في منصة المتفوقين";
-    logo.innerHTML = "منصة المتفوقين";
+    document.title = "منصة Cactu's EduLife | الصفحة الرئيسية";
+    landingTitle.innerHTML = "مرحباً بكم في منصة Cactu's EduLife";
+    logo.innerHTML = "منصة Cactu's EduLife";
     schoolBooksHome.innerHTML = "الكتب المدرسية";
     schoolBooksHome.style.margin = "0 0 0 15px";
     platformDescription.innerHTML =
-      "منصة المتفوقين هي منصة متطورة وعملية وستساعدك في دراستك وسوف تجد فيها كتب ومذكرات لجميع المراحل الدراسية سواء كنت في الأزهر أو التربية والتعليم وسوف تجد روابط لمعلمين كثر في جميع المواد على اليوتيوب بدون أن تضطر لتضييع الوقت في البحث عنهم";
+      "منصة Cactu's EduLife هي منصة متطورة وعملية وستساعدك في دراستك وسوف تجد فيها كتب ومذكرات لجميع المراحل الدراسية سواء كنت في الأزهر أو التربية والتعليم وسوف تجد روابط لمعلمين كثر في جميع المواد على اليوتيوب بدون أن تضطر لتضييع الوقت في البحث عنهم";
     foreignBooks.innerHTML = "الكتب الخارجية";
     notes.innerHTML = "الملازم والمذكرات";
     tips.innerHTML = "منوع";
@@ -202,11 +202,11 @@ if (window.localStorage.getItem("lang")) {
   selection.value = window.localStorage.getItem("lang");
   if (window.localStorage.getItem("lang") === "en") {
     document.body.style.direction = "ltr";
-    document.title = "Outstanding Platform | Home Page";
-    landingTitle.innerHTML = "Welcome To The Outstanding Platform";
+    document.title = "Cactu's EduLife Platform | Home Page";
+    landingTitle.innerHTML = "Welcome To The Cactu's EduLife Platform";
     logo.innerHTML = "Outstanding Platform";
     platformDescription.innerHTML =
-      "The Outstanding Platform is a sophisticated and practical platform that will help you in your studies, and you will find books and notes for all levels of study, whether you are in Al-Azhar or Global Education, and you will find links to many teachers in all subjects on YouTube without having to waste time searching for them";
+      "The Cactu's EduLife Platform is a sophisticated and practical platform that will help you in your studies, and you will find books and notes for all levels of study, whether you are in Al-Azhar or Global Education, and you will find links to many teachers in all subjects on YouTube without having to waste time searching for them";
     foreignBooks.innerHTML = "Extra Books";
     schoolBooksHome.innerHTML = "School Books";
     notes.innerHTML = "Notes";
@@ -246,9 +246,9 @@ if (window.localStorage.getItem("lang")) {
     schoolarshipTips.href = "https://platform-scholarships-en.blogspot.com/";
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
-    document.title = "منصة المتفوقين | الصفحة الرئيسية";
-    landingTitle.innerHTML = "مرحباً بكم في منصة المتفوقين";
-    logo.innerHTML = "منصة المتفوقين";
+    document.title = "منصة Cactu's EduLife | الصفحة الرئيسية";
+    landingTitle.innerHTML = "مرحباً بكم في منصة Cactu's EduLife";
+    logo.innerHTML = "منصة Cactu's EduLife";
     schoolBooksHome.innerHTML = "الكتب المدرسية";
     platformDescription.innerHTML =
       "منصة المتفوقين هي منصة متطورة وعملية وستساعدك في دراستك وسوف تجد فيها كتب ومذكرات لجميع المراحل الدراسية سواء كنت في الأزهر أو التربية والتعليم وسوف تجد روابط لمعلمين كثر في جميع المواد على اليوتيوب بدون أن تضطر لتضييع الوقت في البحث عنهم";
