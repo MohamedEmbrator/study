@@ -101,6 +101,16 @@ let schoolTips = document.querySelector(
 let schoolarshipTips = document.querySelector(
   "header.header .container nav > .advices > div > ul li:nth-child(2) a"
 );
+let secThreePhysics = document.querySelector(".articles .box .content h3");
+let secThreeChemstry = document.querySelector(
+  ".articles .box:nth-child(2) .content h3"
+);
+let secThreeBio = document.querySelector(
+  ".articles .box:nth-child(3) .content h3"
+);
+let secThreeMath = document.querySelector(
+  ".articles .box:nth-child(4) .content h3"
+);
 let secTwoDirection = document.querySelectorAll(".secondary-two .box .info");
 let arrows = document.querySelectorAll(".box .info i");
 let boxReadMore = document.querySelectorAll(".box .info a");
@@ -153,6 +163,10 @@ selection.onchange = function () {
     document.styleSheets[3].rules[4].style.removeProperty("right");
     document.styleSheets[3].rules[4].style.setProperty("left", "0");
     schoolarshipTips.href = "https://platform-scholarships-en.blogspot.com/";
+    secThreePhysics.innerHTML = "Physics";
+    secThreeChemstry.innerHTML = "Chemistry";
+    secThreeBio.innerHTML = "Biology";
+    secThreeMath.innerHTML = "Math";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -203,6 +217,10 @@ selection.onchange = function () {
     document.styleSheets[3].rules[4].style.removeProperty("left");
     document.styleSheets[3].rules[4].style.setProperty("right", "0");
     schoolarshipTips.href = "https://scholarships-ar.blogspot.com/";
+    secThreePhysics.innerHTML = "الفيزياء";
+    secThreeChemstry.innerHTML = "الكيمياء";
+    secThreeBio.innerHTML = "الأحياء";
+    secThreeMath.innerHTML = "الرياضيات";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
@@ -257,11 +275,16 @@ if (window.localStorage.getItem("lang")) {
     document.styleSheets[3].rules[4].style.removeProperty("right");
     document.styleSheets[3].rules[4].style.setProperty("left", "0");
     schoolarshipTips.href = "https://platform-scholarships-en.blogspot.com/";
+    secThreePhysics.innerHTML = "Physics";
+    secThreeChemstry.innerHTML = "Chemistry";
+    secThreeBio.innerHTML = "Biology";
+    secThreeMath.innerHTML = "Math";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
       boxReadMore[i].innerHTML = "Read More";
     }
+    secThreePhysics.innerHTML = "Physics";
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
     document.title = "منصة Cactu's EduLife | الصفحة الرئيسية";
@@ -306,6 +329,10 @@ if (window.localStorage.getItem("lang")) {
     document.styleSheets[3].rules[4].style.removeProperty("left");
     document.styleSheets[3].rules[4].style.setProperty("right", "0");
     schoolarshipTips.href = "https://scholarships-ar.blogspot.com/";
+    secThreePhysics.innerHTML = "الفيزياء";
+    secThreeChemstry.innerHTML = "الكيمياء";
+        secThreeBio.innerHTML = "الأحياء";
+        secThreeMath.innerHTML = "الرياضيات";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
