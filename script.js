@@ -111,6 +111,33 @@ let secThreeBio = document.querySelector(
 let secThreeMath = document.querySelector(
   ".articles .box:nth-child(4) .content h3"
 );
+let secThreeEnglish = document.querySelector(
+  ".articles .box:nth-child(5) .content h3"
+);
+let secThreeGerman = document.querySelector(
+  ".articles .box:nth-child(6) .content h3"
+);
+let secThreeItalian = document.querySelector(
+  ".articles .box:nth-child(7) .content h3"
+);
+let secThreeSpanish = document.querySelector(
+  ".articles .box:nth-child(8) .content h3"
+);
+let secThreeFrench = document.querySelector(
+  ".articles .box:nth-child(9) .content h3"
+);
+let secThreeArabic = document.querySelector(
+  ".articles .box:nth-child(10) .content h3"
+);
+let secThreeHistory = document.querySelector(
+  ".articles .box:nth-child(11) .content h3"
+);
+let secThreeGeoghraphy = document.querySelector(
+  ".articles .box:nth-child(12) .content h3"
+);
+let secThreeGeology = document.querySelector(
+  ".articles .box:nth-child(13) .content h3"
+);
 let secTwoDirection = document.querySelectorAll(".secondary-two .box .info");
 let arrows = document.querySelectorAll(".box .info i");
 let boxReadMore = document.querySelectorAll(".box .info a");
@@ -167,6 +194,15 @@ selection.onchange = function () {
     secThreeChemstry.innerHTML = "Chemistry";
     secThreeBio.innerHTML = "Biology";
     secThreeMath.innerHTML = "Math";
+    secThreeEnglish.innerHTML = "English";
+    secThreeGerman.innerHTML = "German";
+    secThreeItalian.innerHTML = "Italian";
+    secThreeSpanish.innerHTML = "Spanish";
+    secThreeFrench.innerHTML = "French";
+    secThreeArabic.innerHTML = "Arabic";
+    secThreeHistory.innerHTML = "History";
+    secThreeGeoghraphy.innerHTML = "Geography";
+    secThreeGeology.innerHTML = "Geology";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -221,6 +257,15 @@ selection.onchange = function () {
     secThreeChemstry.innerHTML = "الكيمياء";
     secThreeBio.innerHTML = "الأحياء";
     secThreeMath.innerHTML = "الرياضيات";
+    secThreeEnglish.innerHTML = "اللغة الإنجليزية";
+    secThreeGerman.innerHTML = "اللغة الألمانية";
+    secThreeItalian.innerHTML = "اللغة الإيطالية";
+    secThreeSpanish.innerHTML = "اللغة الاسبانية";
+    secThreeFrench.innerHTML = "اللغة الفرنسية";
+    secThreeArabic.innerHTML = "اللغة العربية";
+    secThreeHistory.innerHTML = "التاريخ";
+    secThreeGeoghraphy.innerHTML = "الجغرافيا";
+    secThreeGeology.innerHTML = "الجيولوجيا";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
@@ -279,6 +324,15 @@ if (window.localStorage.getItem("lang")) {
     secThreeChemstry.innerHTML = "Chemistry";
     secThreeBio.innerHTML = "Biology";
     secThreeMath.innerHTML = "Math";
+    secThreeEnglish.innerHTML = "English";
+    secThreeGerman.innerHTML = "German";
+    secThreeItalian.innerHTML = "Italian";
+    secThreeSpanish.innerHTML = "Spanish";
+    secThreeFrench.innerHTML = "French";
+    secThreeArabic.innerHTML = "Arabic";
+    secThreeHistory.innerHTML = "History";
+    secThreeGeoghraphy.innerHTML = "Geography";
+    secThreeGeology.innerHTML = "Geology";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -331,8 +385,17 @@ if (window.localStorage.getItem("lang")) {
     schoolarshipTips.href = "https://scholarships-ar.blogspot.com/";
     secThreePhysics.innerHTML = "الفيزياء";
     secThreeChemstry.innerHTML = "الكيمياء";
-        secThreeBio.innerHTML = "الأحياء";
-        secThreeMath.innerHTML = "الرياضيات";
+    secThreeBio.innerHTML = "الأحياء";
+    secThreeMath.innerHTML = "الرياضيات";
+    secThreeEnglish.innerHTML = "اللغة الإنجليزية";
+    secThreeGerman.innerHTML = "اللغة الألمانية";
+    secThreeItalian.innerHTML = "اللغة الإيطالية";
+    secThreeSpanish.innerHTML = "اللغة الاسبانية";
+    secThreeFrench.innerHTML = "اللغة الفرنسية";
+    secThreeArabic.innerHTML = "اللغة العربية";
+    secThreeHistory.innerHTML = "التاريخ";
+    secThreeGeoghraphy.innerHTML = "الجغرافيا";
+    secThreeGeology.innerHTML = "الجيولوجيا";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
