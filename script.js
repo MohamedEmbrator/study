@@ -177,6 +177,9 @@ let secThreeGeology = document.querySelector(
 let secThreeGeologyDescription = document.querySelector(
   ".articles .box:nth-child(13) .content p"
 );
+let secThreeCourseDescription = document.querySelector(
+  ".articles .box:nth-child(14) .content p"
+);
 let secTwoDirection = document.querySelectorAll(".secondary-two .box .info");
 let arrows = document.querySelectorAll(".box .info i");
 let boxReadMore = document.querySelectorAll(".box .info a");
@@ -244,6 +247,32 @@ selection.onchange = function () {
     secThreeGeology.innerHTML = "Geology";
     secThreePhysicsDescription.innerHTML =
       "A Large Group of Links including the best Secondary Three Physics Teachers On YouTube";
+    secThreeChemstryDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Chemistry Teachers On YouTube";
+    secThreeBioDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Biology Teachers On YouTube";
+    secThreeMathDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Math Teachers On YouTube";
+    secThreeEnglishDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three English Language Teachers On YouTube";
+    secThreeGermanDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three German Language Teachers On YouTube";
+    secThreeItalianDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Italian Language Teachers On YouTube";
+    secThreeSpanishDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Spanish Language Teachers On YouTube";
+    secThreeFrenchDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three French Language Teachers On YouTube";
+    secThreeArabicDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Arabic Language Teachers On YouTube";
+    secThreeHistoryDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three History Teachers On YouTube";
+    secThreeGeoghraphyDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Geography Teachers On YouTube";
+    secThreeGeologyDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Geology Teachers On YouTube";
+    secThreeCourseDescription.innerHTML =
+      "A Large Group of links includes some English language courses to strengthen most skills";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -309,6 +338,32 @@ selection.onchange = function () {
     secThreeGeology.innerHTML = "الجيولوجيا";
     secThreePhysicsDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الفيزياء للصف الثالث الثانوي على اليوتيوب";
+    secThreeChemstryDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الكيمياء للصف الثالث الثانوي على اليوتيوب";
+    secThreeBioDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الأحياء للصف الثالث الثانوي على اليوتيوب";
+    secThreeMathDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الرياضيات للصف الثالث الثانوي على اليوتيوب";
+    secThreeEnglishDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإنجليزية للصف الثالث الثانوي على اليوتيوب";
+    secThreeGermanDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الألمانية للصف الثالث الثانوي على اليوتيوب";
+    secThreeItalianDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإيطالية للصف الثالث الثانوي على اليوتيوب";
+    secThreeSpanishDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الاسبانية للصف الثالث الثانوي على اليوتيوب";
+    secThreeFrenchDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الفرنسية للصف الثالث الثانوي على اليوتيوب";
+    secThreeArabicDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة العربية للصف الثالث الثانوي على اليوتيوب";
+    secThreeHistoryDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة التاريخ للصف الثالث الثانوي على اليوتيوب";
+    secThreeGeoghraphyDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الجغرافيا للصف الثالث الثانوي على اليوتيوب";
+    secThreeGeologyDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الجيولوجيا للصف الثالث الثانوي على اليوتيوب";
+    secThreeCourseDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم بعض كورسات اللغة الإنجليزية لتقوية معظم المهارات";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
@@ -378,6 +433,32 @@ if (window.localStorage.getItem("lang")) {
     secThreeGeology.innerHTML = "Geology";
     secThreePhysicsDescription.innerHTML =
       "A Large Group of Links including the best Secondary Three Physics Teachers On YouTube";
+    secThreeChemstryDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Chemistry Teachers On YouTube";
+    secThreeBioDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Biology Teachers On YouTube";
+    secThreeMathDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Math Teachers On YouTube";
+    secThreeEnglishDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three English Language Teachers On YouTube";
+    secThreeGermanDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three German Language Teachers On YouTube";
+    secThreeItalianDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Italian Language Teachers On YouTube";
+    secThreeSpanishDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Spanish Language Teachers On YouTube";
+    secThreeFrenchDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three French Language Teachers On YouTube";
+    secThreeArabicDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Arabic Language Teachers On YouTube";
+    secThreeHistoryDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three History Teachers On YouTube";
+    secThreeGeoghraphyDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Geography Teachers On YouTube";
+    secThreeGeologyDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Geology Teachers On YouTube";
+    secThreeCourseDescription.innerHTML =
+      "A Large Group of links includes some English language courses to strengthen most skills";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -443,6 +524,32 @@ if (window.localStorage.getItem("lang")) {
     secThreeGeology.innerHTML = "الجيولوجيا";
     secThreePhysicsDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الفيزياء للصف الثالث الثانوي على اليوتيوب";
+    secThreeChemstryDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الكيمياء للصف الثالث الثانوي على اليوتيوب";
+    secThreeBioDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الأحياء للصف الثالث الثانوي على اليوتيوب";
+    secThreeMathDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الرياضيات للصف الثالث الثانوي على اليوتيوب";
+    secThreeEnglishDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإنجليزية للصف الثالث الثانوي على اليوتيوب";
+    secThreeGermanDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الألمانية للصف الثالث الثانوي على اليوتيوب";
+    secThreeItalianDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإيطالية للصف الثالث الثانوي على اليوتيوب";
+    secThreeSpanishDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الاسبانية للصف الثالث الثانوي على اليوتيوب";
+    secThreeFrenchDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الفرنسية للصف الثالث الثانوي على اليوتيوب";
+    secThreeArabicDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة العربية للصف الثالث الثانوي على اليوتيوب";
+    secThreeHistoryDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة التاريخ للصف الثالث الثانوي على اليوتيوب";
+    secThreeGeoghraphyDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الجغرافيا للصف الثالث الثانوي على اليوتيوب";
+    secThreeGeologyDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الجيولوجيا للصف الثالث الثانوي على اليوتيوب";
+    secThreeCourseDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم بعض كورسات اللغة الإنجليزية لتقوية معظم المهارات";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
