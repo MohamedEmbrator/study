@@ -102,41 +102,80 @@ let schoolarshipTips = document.querySelector(
   "header.header .container nav > .advices > div > ul li:nth-child(2) a"
 );
 let secThreePhysics = document.querySelector(".articles .box .content h3");
+let secThreePhysicsDescription = document.querySelector(
+  ".articles .box .content p"
+);
 let secThreeChemstry = document.querySelector(
   ".articles .box:nth-child(2) .content h3"
+);
+let secThreeChemstryDescription = document.querySelector(
+  ".articles .box:nth-child(2) .content p"
 );
 let secThreeBio = document.querySelector(
   ".articles .box:nth-child(3) .content h3"
 );
+let secThreeBioDescription = document.querySelector(
+  ".articles .box:nth-child(3) .content p"
+);
 let secThreeMath = document.querySelector(
   ".articles .box:nth-child(4) .content h3"
+);
+let secThreeMathDescription = document.querySelector(
+  ".articles .box:nth-child(4) .content p"
 );
 let secThreeEnglish = document.querySelector(
   ".articles .box:nth-child(5) .content h3"
 );
+let secThreeEnglishDescription = document.querySelector(
+  ".articles .box:nth-child(5) .content p"
+);
 let secThreeGerman = document.querySelector(
   ".articles .box:nth-child(6) .content h3"
+);
+let secThreeGermanDescription = document.querySelector(
+  ".articles .box:nth-child(6) .content p"
 );
 let secThreeItalian = document.querySelector(
   ".articles .box:nth-child(7) .content h3"
 );
+let secThreeItalianDescription = document.querySelector(
+  ".articles .box:nth-child(7) .content p"
+);
 let secThreeSpanish = document.querySelector(
   ".articles .box:nth-child(8) .content h3"
+);
+let secThreeSpanishDescription = document.querySelector(
+  ".articles .box:nth-child(8) .content p"
 );
 let secThreeFrench = document.querySelector(
   ".articles .box:nth-child(9) .content h3"
 );
+let secThreeFrenchDescription = document.querySelector(
+  ".articles .box:nth-child(9) .content p"
+);
 let secThreeArabic = document.querySelector(
   ".articles .box:nth-child(10) .content h3"
+);
+let secThreeArabicDescription = document.querySelector(
+  ".articles .box:nth-child(10) .content p"
 );
 let secThreeHistory = document.querySelector(
   ".articles .box:nth-child(11) .content h3"
 );
+let secThreeHistoryDescription = document.querySelector(
+  ".articles .box:nth-child(11) .content p"
+);
 let secThreeGeoghraphy = document.querySelector(
   ".articles .box:nth-child(12) .content h3"
 );
+let secThreeGeoghraphyDescription = document.querySelector(
+  ".articles .box:nth-child(12) .content p"
+);
 let secThreeGeology = document.querySelector(
   ".articles .box:nth-child(13) .content h3"
+);
+let secThreeGeologyDescription = document.querySelector(
+  ".articles .box:nth-child(13) .content p"
 );
 let secTwoDirection = document.querySelectorAll(".secondary-two .box .info");
 let arrows = document.querySelectorAll(".box .info i");
@@ -203,6 +242,8 @@ selection.onchange = function () {
     secThreeHistory.innerHTML = "History";
     secThreeGeoghraphy.innerHTML = "Geography";
     secThreeGeology.innerHTML = "Geology";
+    secThreePhysicsDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Physics Teachers On YouTube";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -266,6 +307,8 @@ selection.onchange = function () {
     secThreeHistory.innerHTML = "التاريخ";
     secThreeGeoghraphy.innerHTML = "الجغرافيا";
     secThreeGeology.innerHTML = "الجيولوجيا";
+    secThreePhysicsDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الفيزياء للصف الثالث الثانوي على اليوتيوب";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
@@ -333,6 +376,8 @@ if (window.localStorage.getItem("lang")) {
     secThreeHistory.innerHTML = "History";
     secThreeGeoghraphy.innerHTML = "Geography";
     secThreeGeology.innerHTML = "Geology";
+    secThreePhysicsDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Three Physics Teachers On YouTube";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -396,6 +441,8 @@ if (window.localStorage.getItem("lang")) {
     secThreeHistory.innerHTML = "التاريخ";
     secThreeGeoghraphy.innerHTML = "الجغرافيا";
     secThreeGeology.innerHTML = "الجيولوجيا";
+    secThreePhysicsDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الفيزياء للصف الثالث الثانوي على اليوتيوب";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
