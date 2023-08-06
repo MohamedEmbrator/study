@@ -101,6 +101,9 @@ let schoolTips = document.querySelector(
 let schoolarshipTips = document.querySelector(
   "header.header .container nav > .advices > div > ul li:nth-child(2) a"
 );
+let secTwoDirection = document.querySelectorAll(".secondary-two .box .info");
+let arrows = document.querySelectorAll(".box .info i");
+let boxReadMore = document.querySelectorAll(".box .info a");
 let form = document.querySelector(".landing .container form");
 let secThreeMainTitle = document.querySelector(".articles > .main-title");
 selection.onchange = function () {
@@ -150,6 +153,11 @@ selection.onchange = function () {
     document.styleSheets[3].rules[4].style.removeProperty("right");
     document.styleSheets[3].rules[4].style.setProperty("left", "0");
     schoolarshipTips.href = "https://platform-scholarships-en.blogspot.com/";
+    for (let i = 0; i <= arrows.length; i++) {
+      arrows[i].classList.remove("fa-arrow-left");
+      arrows[i].classList.add("fa-arrow-right");
+      boxReadMore[i].innerHTML = "Read More";
+    }
   } else if (window.localStorage.getItem("lang") === "ar") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "rtl";
@@ -195,6 +203,11 @@ selection.onchange = function () {
     document.styleSheets[3].rules[4].style.removeProperty("left");
     document.styleSheets[3].rules[4].style.setProperty("right", "0");
     schoolarshipTips.href = "https://scholarships-ar.blogspot.com/";
+    for (let i = 0; i <= arrows.length; i++) {
+      arrows[i].classList.remove("fa-arrow-right");
+      arrows[i].classList.add("fa-arrow-left");
+      boxReadMore[i].innerHTML = "قراءة المزيد";
+    }
   }
 };
 //  ------- -- ------- - ------- ------ ----- ------- ------
@@ -244,6 +257,11 @@ if (window.localStorage.getItem("lang")) {
     document.styleSheets[3].rules[4].style.removeProperty("right");
     document.styleSheets[3].rules[4].style.setProperty("left", "0");
     schoolarshipTips.href = "https://platform-scholarships-en.blogspot.com/";
+    for (let i = 0; i <= arrows.length; i++) {
+      arrows[i].classList.remove("fa-arrow-left");
+      arrows[i].classList.add("fa-arrow-right");
+      boxReadMore[i].innerHTML = "Read More";
+    }
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
     document.title = "منصة Cactu's EduLife | الصفحة الرئيسية";
@@ -288,6 +306,11 @@ if (window.localStorage.getItem("lang")) {
     document.styleSheets[3].rules[4].style.removeProperty("left");
     document.styleSheets[3].rules[4].style.setProperty("right", "0");
     schoolarshipTips.href = "https://scholarships-ar.blogspot.com/";
+    for (let i = 0; i <= arrows.length; i++) {
+      arrows[i].classList.remove("fa-arrow-right");
+      arrows[i].classList.add("fa-arrow-left");
+      boxReadMore[i].innerHTML = "قراءة المزيد";
+    }
   }
 }
 // End English And Arabic Switch
