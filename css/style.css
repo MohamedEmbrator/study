@@ -899,7 +899,7 @@ svg:not(:root) {
   margin-bottom: 10px;
 }
 .contact .container .box:first-child .icon {
-  color: #25d366;
+  color: #5851db;
 }
 .contact .container .box:nth-child(2) .icon {
   color: #1877f2;
@@ -943,14 +943,14 @@ svg:not(:root) {
   transition: var(--main-transition);
 }
 .contact .container .box:first-child .info > a {
-  border: 3px solid #25d366;
-  color: #25d366;
-  background: linear-gradient(to left, #25d366 50%, white 50%) right bottom /
+  border: 3px solid #833ab4;
+  color: #833ab4;
+  background: linear-gradient(to left, #833ab4 50%, white 50%) right bottom /
     200% 100%;
   background-position: left bottom;
 }
 .contact .container .box:first-child .info > h4::selection {
-  background-color: #25d366;
+  background-color: #833ab4;
   color: #fff;
 }
 .contact .container .box:nth-child(2) .info > a {
