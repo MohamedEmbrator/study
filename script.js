@@ -275,32 +275,44 @@ let secOneEnglish = document.querySelector(
 let secOneEnglishDescription = document.querySelector(
   ".secondary-one .box:nth-child(5) .content p"
 );
-let secOneFrench = document.querySelector(
+let secOneGerman = document.querySelector(
   ".secondary-one .box:nth-child(6) .content h3"
 );
-let secOneFrenchDescription = document.querySelector(
+let secOneGermanDescription = document.querySelector(
   ".secondary-one .box:nth-child(6) .content p"
 );
-let secOneArabic = document.querySelector(
+let secOneItalian = document.querySelector(
   ".secondary-one .box:nth-child(7) .content h3"
 );
-let secOneArabicDescription = document.querySelector(
+let secOneItalianDescription = document.querySelector(
   ".secondary-one .box:nth-child(7) .content p"
 );
-let secOneHistory = document.querySelector(
+let secOneFrench = document.querySelector(
   ".secondary-one .box:nth-child(8) .content h3"
 );
-let secOneHistoryDescription = document.querySelector(
+let secOneFrenchDescription = document.querySelector(
   ".secondary-one .box:nth-child(8) .content p"
 );
-let secOneGeography = document.querySelector(
+let secOneArabic = document.querySelector(
   ".secondary-one .box:nth-child(9) .content h3"
 );
-let secOneGeographyDescription = document.querySelector(
+let secOneArabicDescription = document.querySelector(
   ".secondary-one .box:nth-child(9) .content p"
 );
-let secOneCourseDescription = document.querySelector(
+let secOneHistory = document.querySelector(
+  ".secondary-one .box:nth-child(10) .content h3"
+);
+let secOneHistoryDescription = document.querySelector(
   ".secondary-one .box:nth-child(10) .content p"
+);
+let secOneGeography = document.querySelector(
+  ".secondary-one .box:nth-child(11) .content h3"
+);
+let secOneGeographyDescription = document.querySelector(
+  ".secondary-one .box:nth-child(11) .content p"
+);
+let secOneCourseDescription = document.querySelector(
+  ".secondary-one .box:nth-child(12) .content p"
 );
 let arrows = document.querySelectorAll(".box .info i");
 let boxReadMore = document.querySelectorAll(".box .info a");
@@ -441,6 +453,8 @@ selection.onchange = function () {
     secOneBio.innerHTML = "Biology";
     secOneMath.innerHTML = "Math";
     secOneEnglish.innerHTML = "English";
+    secOneGerman.innerHTML = "German";
+    secOneItalian.innerHTML = "Italian";
     secOneFrench.innerHTML = "French";
     secOneArabic.innerHTML = "Arabic";
     secOneHistory.innerHTML = "History";
@@ -457,6 +471,10 @@ selection.onchange = function () {
       "A Large Group of Links including the best Secondary One Math Teachers On YouTube";
     secOneEnglishDescription.innerHTML =
       "A Large Group of Links including the best Secondary One English Language Teachers On YouTube";
+    secOneGermanDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One German Language Teachers On YouTube";
+    secOneItalianDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Italian Language Teachers On YouTube";
     secOneFrenchDescription.innerHTML =
       "A Large Group of Links including the best Secondary One French Language Teachers On YouTube";
     secOneArabicDescription.innerHTML =
@@ -598,6 +616,8 @@ selection.onchange = function () {
     secOneBio.innerHTML = "الأحياء";
     secOneMath.innerHTML = "الرياضيات";
     secOneEnglish.innerHTML = "اللغة الإنجليزية";
+    secOneGerman.innerHTML = "اللغة الألمانية";
+    secOneItalian.innerHTML = "اللغة الإيطالية";
     secOneFrench.innerHTML = "اللغة الفرنسية";
     secOneArabic.innerHTML = "اللغة العربية";
     secOneHistory.innerHTML = "التاريخ";
@@ -614,6 +634,10 @@ selection.onchange = function () {
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الرياضيات للصف الأول الثانوي على اليوتيوب";
     secOneEnglishDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإنجليزية للصف الأول الثانوي على اليوتيوب";
+    secOneGermanDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الألمانية للصف الأول الثانوي على اليوتيوب";
+    secOneItalianDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإيطالية للصف الأول الثانوي على اليوتيوب";
     secOneFrenchDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الفرنسية للصف الأول الثانوي على اليوتيوب";
     secOneArabicDescription.innerHTML =
@@ -761,6 +785,8 @@ if (window.localStorage.getItem("lang")) {
     secOneBio.innerHTML = "Biology";
     secOneMath.innerHTML = "Math";
     secOneEnglish.innerHTML = "English";
+    secOneGerman.innerHTML = "German";
+    secOneItalian.innerHTML = "Italian";
     secOneFrench.innerHTML = "French";
     secOneArabic.innerHTML = "Arabic";
     secOneHistory.innerHTML = "History";
@@ -777,6 +803,10 @@ if (window.localStorage.getItem("lang")) {
       "A Large Group of Links including the best Secondary One Math Teachers On YouTube";
     secOneEnglishDescription.innerHTML =
       "A Large Group of Links including the best Secondary One English Language Teachers On YouTube";
+    secOneGermanDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One German Language Teachers On YouTube";
+    secOneItalianDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Italian Language Teachers On YouTube";
     secOneFrenchDescription.innerHTML =
       "A Large Group of Links including the best Secondary One French Language Teachers On YouTube";
     secOneArabicDescription.innerHTML =
@@ -917,6 +947,8 @@ if (window.localStorage.getItem("lang")) {
     secOneBio.innerHTML = "الأحياء";
     secOneMath.innerHTML = "الرياضيات";
     secOneEnglish.innerHTML = "اللغة الإنجليزية";
+    secOneGerman.innerHTML = "اللغة الألمانية";
+    secOneItalian.innerHTML = "اللغة الإيطالية";
     secOneFrench.innerHTML = "اللغة الفرنسية";
     secOneArabic.innerHTML = "اللغة العربية";
     secOneHistory.innerHTML = "التاريخ";
@@ -933,6 +965,10 @@ if (window.localStorage.getItem("lang")) {
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الرياضيات للصف الأول الثانوي على اليوتيوب";
     secOneEnglishDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإنجليزية للصف الأول الثانوي على اليوتيوب";
+    secOneGermanDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الألمانية للصف الأول الثانوي على اليوتيوب";
+    secOneItalianDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإيطالية للصف الأول الثانوي على اليوتيوب";
     secOneFrenchDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الفرنسية للصف الأول الثانوي على اليوتيوب";
     secOneArabicDescription.innerHTML =
