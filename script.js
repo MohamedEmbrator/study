@@ -355,6 +355,8 @@ let clickBtnFive = document.querySelector(
 let clickBtnSix = document.querySelector(
   ".contact .container .box:nth-child(6) .info > a"
 );
+let footerDescription = document.querySelector("footer > p:first-child");
+let copyRights = document.querySelector("footer .container .footer-title");
 selection.onchange = function () {
   window.localStorage.setItem("lang", selection.value);
   if (window.localStorage.getItem("lang") === "en") {
@@ -531,6 +533,10 @@ selection.onchange = function () {
     clickBtnFour.innerHTML = "Click here";
     clickBtnFive.innerHTML = "Click here";
     clickBtnSix.innerHTML = "Click here";
+    footerDescription.innerHTML =
+      "This Platform was built carefully with the aim of saving students time in searching for anything related to studying and facilitating the means of studying for them.";
+    copyRights.innerHTML =
+      "All Rights Reserved &copy;<span>Mohamed Embrator And Rokaya Zaki</span><sub>2023</sub>";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -707,6 +713,10 @@ selection.onchange = function () {
     clickBtnFour.innerHTML = "إضغط هنا";
     clickBtnFive.innerHTML = "إضغط هنا";
     clickBtnSix.innerHTML = "إضغط هنا";
+    footerDescription.innerHTML =
+      "تم بناء هذه المنصة بعناية وبغرض توفير الوقت على الطلاب في البحث عن أي شيئ يخص الدراسة وتسهيل وسائل الدراسة لهم.";
+    copyRights.innerHTML =
+      "جميع الحقوق محفوظة لدى © <sub>2023</sub><span>Mohamed Embrator And Rokaya Zaki</span>";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
@@ -721,7 +731,7 @@ if (window.localStorage.getItem("lang")) {
     document.body.style.direction = "ltr";
     document.title = "Cactu's EduLife Platform | Home Page";
     landingTitle.innerHTML = "Welcome To The Cactu's EduLife Platform";
-    logo.innerHTML = "Outstanding Platform";
+    logo.innerHTML = "Cactu's EduLife Platform";
     platformDescription.innerHTML =
       "The Cactu's EduLife Platform is a sophisticated and practical platform that will help you in your studies, and you will find books and notes for all levels of study, whether you are in Al-Azhar or Global Education, and you will find links to many teachers in all subjects on YouTube without having to waste time searching for them";
     foreignBooks.innerHTML = "Extra Books";
@@ -890,6 +900,10 @@ if (window.localStorage.getItem("lang")) {
     clickBtnFour.innerHTML = "Click here";
     clickBtnFive.innerHTML = "Click here";
     clickBtnSix.innerHTML = "Click here";
+    footerDescription.innerHTML =
+      "This Platform was built carefully with the aim of saving students time in searching for anything related to studying and facilitating the means of studying for them.";
+    copyRights.innerHTML =
+      "All Rights Reserved &copy;<span>Mohamed Embrator And Rokaya Zaki</span><sub>2023</sub>";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -1065,6 +1079,10 @@ if (window.localStorage.getItem("lang")) {
     clickBtnFour.innerHTML = "إضغط هنا";
     clickBtnFive.innerHTML = "إضغط هنا";
     clickBtnSix.innerHTML = "إضغط هنا";
+    footerDescription.innerHTML =
+      "تم بناء هذه المنصة بعناية وبغرض توفير الوقت على الطلاب في البحث عن أي شيئ يخص الدراسة وتسهيل وسائل الدراسة لهم.";
+    copyRights.innerHTML =
+      "جميع الحقوق محفوظة لدى © <sub>2023</sub><span>Mohamed Embrator And Rokaya Zaki</span>";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
