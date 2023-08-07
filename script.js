@@ -320,7 +320,41 @@ let form = document.querySelector(".landing .container form");
 let secThreeMainTitle = document.querySelector(".articles > .main-title");
 let secTwoMainTitle = document.querySelector(".secondary-two .main-title");
 let secOneMainTitle = document.querySelector(".secondary-one .main-title");
-
+let contactMainTitle = document.querySelector(".contact .main-title");
+let instaTitle = document.querySelector(".contact .container .box .info > h4");
+let facebookTitle = document.querySelector(
+  ".contact .container .box:nth-child(2) .info > h4"
+);
+let linkedInTitle = document.querySelector(
+  ".contact .container .box:nth-child(3) .info > h4"
+);
+let emailTitle = document.querySelector(
+  ".contact .container .box:nth-child(4) .info > h4"
+);
+let youtubeTitle = document.querySelector(
+  ".contact .container .box:nth-child(5) .info > h4"
+);
+let suggestTitle = document.querySelector(
+  ".contact .container .box:nth-child(6) .info > h4"
+);
+let clickBtnOne = document.querySelector(
+  ".contact .container .box:first-child .info > a"
+);
+let clickBtnTwo = document.querySelector(
+  ".contact .container .box:nth-child(2) .info > a"
+);
+let clickBtnThree = document.querySelector(
+  ".contact .container .box:nth-child(3) .info > a"
+);
+let clickBtnFour = document.querySelector(
+  ".contact .container .box:nth-child(4) .info > a"
+);
+let clickBtnFive = document.querySelector(
+  ".contact .container .box:nth-child(5) .info > a"
+);
+let clickBtnSix = document.querySelector(
+  ".contact .container .box:nth-child(6) .info > a"
+);
 selection.onchange = function () {
   window.localStorage.setItem("lang", selection.value);
   if (window.localStorage.getItem("lang") === "en") {
@@ -483,6 +517,20 @@ selection.onchange = function () {
       "A Large Group of Links including the best Secondary One History Teachers On YouTube";
     secOneGeographyDescription.innerHTML =
       "A Large Group of Links including the best Secondary One Geography Teachers On YouTube";
+    contactMainTitle.innerHTML = "Contact us";
+    instaTitle.innerHTML = "Contact with us on Instagram";
+    facebookTitle.innerHTML = "Contact with us on Facebook";
+    linkedInTitle.innerHTML = "Contact with me on LinkedIn";
+    youtubeTitle.innerHTML = "My YouTube Channel";
+    suggestTitle.innerHTML =
+      "You can suggest any addition to this Website via this link";
+    emailTitle.innerHTML = "Contact me via Email";
+    clickBtnOne.innerHTML = "Click here";
+    clickBtnTwo.innerHTML = "Click here";
+    clickBtnThree.innerHTML = "Click here";
+    clickBtnFour.innerHTML = "Click here";
+    clickBtnFive.innerHTML = "Click here";
+    clickBtnSix.innerHTML = "Click here";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -646,6 +694,19 @@ selection.onchange = function () {
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة التاريخ للصف الأول الثانوي على اليوتيوب";
     secOneGeographyDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الجغرافيا للصف الأول الثانوي على اليوتيوب";
+    contactMainTitle.innerHTML = "تواصل معنا";
+    instaTitle.innerHTML = "تواصل معنا على إنستجرام";
+    facebookTitle.innerHTML = "تواصل معنا على فيسبوك";
+    linkedInTitle.innerHTML = "تواصل معي على لينكد إن";
+    youtubeTitle.innerHTML = "قناتي على اليوتيوب";
+    emailTitle.innerHTML = "راسلني عبر البريد الإلكتروني";
+    suggestTitle.innerHTML = "ويمكنك إقتراح أي إضافة في الموقع عبر هذا الرابط";
+    clickBtnOne.innerHTML = "إضغط هنا";
+    clickBtnTwo.innerHTML = "إضغط هنا";
+    clickBtnThree.innerHTML = "إضغط هنا";
+    clickBtnFour.innerHTML = "إضغط هنا";
+    clickBtnFive.innerHTML = "إضغط هنا";
+    clickBtnSix.innerHTML = "إضغط هنا";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
@@ -815,6 +876,20 @@ if (window.localStorage.getItem("lang")) {
       "A Large Group of Links including the best Secondary One History Teachers On YouTube";
     secOneGeographyDescription.innerHTML =
       "A Large Group of Links including the best Secondary One Geography Teachers On YouTube";
+    contactMainTitle.innerHTML = "Contact us";
+    instaTitle.innerHTML = "Contact with us on Instagram";
+    facebookTitle.innerHTML = "Contact with us on Facebook";
+    linkedInTitle.innerHTML = "Contact with me on LinkedIn";
+    youtubeTitle.innerHTML = "My YouTube Channel";
+    suggestTitle.innerHTML =
+      "You can suggest any addition to this Website via this link";
+    emailTitle.innerHTML = "Contact me via Email";
+    clickBtnOne.innerHTML = "Click here";
+    clickBtnTwo.innerHTML = "Click here";
+    clickBtnThree.innerHTML = "Click here";
+    clickBtnFour.innerHTML = "Click here";
+    clickBtnFive.innerHTML = "Click here";
+    clickBtnSix.innerHTML = "Click here";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -977,6 +1052,19 @@ if (window.localStorage.getItem("lang")) {
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة التاريخ للصف الأول الثانوي على اليوتيوب";
     secOneGeographyDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الجغرافيا للصف الأول الثانوي على اليوتيوب";
+    contactMainTitle.innerHTML = "تواصل معنا";
+    instaTitle.innerHTML = "تواصل معنا على إنستجرام";
+    facebookTitle.innerHTML = "تواصل معنا على فيسبوك";
+    linkedInTitle.innerHTML = "تواصل معي على لينكد إن";
+    youtubeTitle.innerHTML = "قناتي على اليوتيوب";
+    emailTitle.innerHTML = "راسلني عبر البريد الإلكتروني";
+    suggestTitle.innerHTML = "ويمكنك إقتراح أي إضافة في الموقع عبر هذا الرابط";
+    clickBtnOne.innerHTML = "إضغط هنا";
+    clickBtnTwo.innerHTML = "إضغط هنا";
+    clickBtnThree.innerHTML = "إضغط هنا";
+    clickBtnFour.innerHTML = "إضغط هنا";
+    clickBtnFive.innerHTML = "إضغط هنا";
+    clickBtnSix.innerHTML = "إضغط هنا";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
