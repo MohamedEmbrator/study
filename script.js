@@ -208,32 +208,44 @@ let secTowEnglish = document.querySelector(
 let secTowEnglishDescription = document.querySelector(
   ".secondary-two .box:nth-child(5) .content p"
 );
-let secTowFrench = document.querySelector(
+let secTowGerman = document.querySelector(
   ".secondary-two .box:nth-child(6) .content h3"
 );
-let secTowFrenchDescription = document.querySelector(
+let secTowGermanDescription = document.querySelector(
   ".secondary-two .box:nth-child(6) .content p"
 );
-let secTowArabic = document.querySelector(
+let secTowItalian = document.querySelector(
   ".secondary-two .box:nth-child(7) .content h3"
 );
-let secTowArabicDescription = document.querySelector(
+let secTowItalianDescription = document.querySelector(
   ".secondary-two .box:nth-child(7) .content p"
 );
-let secTowHistory = document.querySelector(
+let secTowFrench = document.querySelector(
   ".secondary-two .box:nth-child(8) .content h3"
 );
-let secTowHistoryDescription = document.querySelector(
+let secTowFrenchDescription = document.querySelector(
   ".secondary-two .box:nth-child(8) .content p"
 );
-let secTowGeography = document.querySelector(
+let secTowArabic = document.querySelector(
   ".secondary-two .box:nth-child(9) .content h3"
 );
-let secTowGeographyDescription = document.querySelector(
+let secTowArabicDescription = document.querySelector(
   ".secondary-two .box:nth-child(9) .content p"
 );
-let secTowCourseDescription = document.querySelector(
+let secTowHistory = document.querySelector(
+  ".secondary-two .box:nth-child(10) .content h3"
+);
+let secTowHistoryDescription = document.querySelector(
   ".secondary-two .box:nth-child(10) .content p"
+);
+let secTowGeography = document.querySelector(
+  ".secondary-two .box:nth-child(11) .content h3"
+);
+let secTowGeographyDescription = document.querySelector(
+  ".secondary-two .box:nth-child(11) .content p"
+);
+let secTowCourseDescription = document.querySelector(
+  ".secondary-two .box:nth-child(12) .content p"
 );
 let secOnePhysics = document.querySelector(".secondary-one .box .content h3");
 let secOnePhysicsDescription = document.querySelector(
@@ -394,6 +406,8 @@ selection.onchange = function () {
     secTowBio.innerHTML = "Biology";
     secTowMath.innerHTML = "Math";
     secTowEnglish.innerHTML = "English";
+    secTowGerman.innerHTML = "German";
+    secTowItalian.innerHTML = "Italian";
     secTowFrench.innerHTML = "French";
     secTowArabic.innerHTML = "Arabic";
     secTowHistory.innerHTML = "History";
@@ -410,6 +424,10 @@ selection.onchange = function () {
       "A Large Group of Links including the best Secondary Two Math Teachers On YouTube";
     secTowEnglishDescription.innerHTML =
       "A Large Group of Links including the best Secondary Two English Language Teachers On YouTube";
+    secTowGermanDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Two German Language Teachers On YouTube";
+    secTowItalianDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Two Italian Language Teachers On YouTube";
     secTowFrenchDescription.innerHTML =
       "A Large Group of Links including the best Secondary Two French Language Teachers On YouTube";
     secTowArabicDescription.innerHTML =
@@ -546,6 +564,8 @@ selection.onchange = function () {
     secTowMath.innerHTML = "الرياضيات";
     secTowEnglish.innerHTML = "اللغة الإنجليزية";
     secTowFrench.innerHTML = "اللغة الفرنسية";
+    secTowGerman.innerHTML = "اللغة الألمانية";
+    secTowItalian.innerHTML = "اللغة الإيطالية";
     secTowArabic.innerHTML = "اللغة العربية";
     secTowHistory.innerHTML = "التاريخ";
     secTowGeography.innerHTML = "الجغرافيا";
@@ -561,6 +581,10 @@ selection.onchange = function () {
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الرياضيات للصف الثاني الثانوي على اليوتيوب";
     secTowEnglishDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإنجليزية للصف الثاني الثانوي على اليوتيوب";
+    secTowGermanDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الألمانية للصف الثاني الثانوي على اليوتيوب";
+    secTowItalianDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإيطالية للصف الثاني الثانوي على اليوتيوب";
     secTowFrenchDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الفرنسية للصف الثاني الثانوي على اليوتيوب";
     secTowArabicDescription.innerHTML =
@@ -702,6 +726,8 @@ if (window.localStorage.getItem("lang")) {
     secTowBio.innerHTML = "Biology";
     secTowMath.innerHTML = "Math";
     secTowEnglish.innerHTML = "English";
+    secTowGerman.innerHTML = "German";
+    secTowItalian.innerHTML = "Italian";
     secTowFrench.innerHTML = "French";
     secTowArabic.innerHTML = "Arabic";
     secTowHistory.innerHTML = "History";
@@ -718,6 +744,10 @@ if (window.localStorage.getItem("lang")) {
       "A Large Group of Links including the best Secondary Two Math Teachers On YouTube";
     secTowEnglishDescription.innerHTML =
       "A Large Group of Links including the best Secondary Two English Language Teachers On YouTube";
+    secTowGermanDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Two German Language Teachers On YouTube";
+    secTowItalianDescription.innerHTML =
+      "A Large Group of Links including the best Secondary Two Italian Language Teachers On YouTube";
     secTowFrenchDescription.innerHTML =
       "A Large Group of Links including the best Secondary Two French Language Teachers On YouTube";
     secTowArabicDescription.innerHTML =
@@ -852,6 +882,8 @@ if (window.localStorage.getItem("lang")) {
     secTowBio.innerHTML = "الأحياء";
     secTowMath.innerHTML = "الرياضيات";
     secTowEnglish.innerHTML = "اللغة الإنجليزية";
+    secTowGerman.innerHTML = "اللغة الألمانية";
+    secTowItalian.innerHTML = "اللغة الإيطالية";
     secTowFrench.innerHTML = "اللغة الفرنسية";
     secTowArabic.innerHTML = "اللغة العربية";
     secTowHistory.innerHTML = "التاريخ";
@@ -868,6 +900,10 @@ if (window.localStorage.getItem("lang")) {
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الرياضيات للصف الثاني الثانوي على اليوتيوب";
     secTowEnglishDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإنجليزية للصف الثاني الثانوي على اليوتيوب";
+    secTowGermanDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الألمانية للصف الثاني الثانوي على اليوتيوب";
+    secTowItalianDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإيطالية للصف الثاني الثانوي على اليوتيوب";
     secTowFrenchDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الفرنسية للصف الثاني الثانوي على اليوتيوب";
     secTowArabicDescription.innerHTML =
