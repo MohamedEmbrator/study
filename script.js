@@ -235,6 +235,61 @@ let secTowGeographyDescription = document.querySelector(
 let secTowCourseDescription = document.querySelector(
   ".secondary-two .box:nth-child(10) .content p"
 );
+let secOnePhysics = document.querySelector(".secondary-one .box .content h3");
+let secOnePhysicsDescription = document.querySelector(
+  ".secondary-one .box .content p"
+);
+let secOneChemistry = document.querySelector(
+  ".secondary-one .box:nth-child(2) .content h3"
+);
+let secOneChemistryDescription = document.querySelector(
+  ".secondary-one .box:nth-child(2) .content p"
+);
+let secOneBio = document.querySelector(
+  ".secondary-one .box:nth-child(3) .content h3"
+);
+let secOneBioDescription = document.querySelector(
+  ".secondary-one .box:nth-child(3) .content p"
+);
+let secOneMath = document.querySelector(
+  ".secondary-one .box:nth-child(4) .content h3"
+);
+let secOneMathDescription = document.querySelector(
+  ".secondary-one .box:nth-child(4) .content p"
+);
+let secOneEnglish = document.querySelector(
+  ".secondary-one .box:nth-child(5) .content h3"
+);
+let secOneEnglishDescription = document.querySelector(
+  ".secondary-one .box:nth-child(5) .content p"
+);
+let secOneFrench = document.querySelector(
+  ".secondary-one .box:nth-child(6) .content h3"
+);
+let secOneFrenchDescription = document.querySelector(
+  ".secondary-one .box:nth-child(6) .content p"
+);
+let secOneArabic = document.querySelector(
+  ".secondary-one .box:nth-child(7) .content h3"
+);
+let secOneArabicDescription = document.querySelector(
+  ".secondary-one .box:nth-child(7) .content p"
+);
+let secOneHistory = document.querySelector(
+  ".secondary-one .box:nth-child(8) .content h3"
+);
+let secOneHistoryDescription = document.querySelector(
+  ".secondary-one .box:nth-child(8) .content p"
+);
+let secOneGeography = document.querySelector(
+  ".secondary-one .box:nth-child(9) .content h3"
+);
+let secOneGeographyDescription = document.querySelector(
+  ".secondary-one .box:nth-child(9) .content p"
+);
+let secOneCourseDescription = document.querySelector(
+  ".secondary-one .box:nth-child(10) .content p"
+);
 let arrows = document.querySelectorAll(".box .info i");
 let boxReadMore = document.querySelectorAll(".box .info a");
 let form = document.querySelector(".landing .container form");
@@ -363,6 +418,35 @@ selection.onchange = function () {
       "A Large Group of Links including the best Secondary Two History Teachers On YouTube";
     secTowGeographyDescription.innerHTML =
       "A Large Group of Links including the best Secondary Two Geography Teachers On YouTube";
+    secOnePhysics.innerHTML = "Physics";
+    secOneChemistry.innerHTML = "Chemistry";
+    secOneBio.innerHTML = "Biology";
+    secOneMath.innerHTML = "Math";
+    secOneEnglish.innerHTML = "English";
+    secOneFrench.innerHTML = "French";
+    secOneArabic.innerHTML = "Arabic";
+    secOneHistory.innerHTML = "History";
+    secOneGeography.innerHTML = "Geography";
+    secOneCourseDescription.innerHTML =
+      "A Large Group of links includes some English language courses to strengthen most skills";
+    secOnePhysicsDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Physics Teachers On YouTube";
+    secOneChemistryDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Chemistry Teachers On YouTube";
+    secOneBioDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Biology Teachers On YouTube";
+    secOneMathDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Math Teachers On YouTube";
+    secOneEnglishDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One English Language Teachers On YouTube";
+    secOneFrenchDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One French Language Teachers On YouTube";
+    secOneArabicDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Arabic Language Teachers On YouTube";
+    secOneHistoryDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One History Teachers On YouTube";
+    secOneGeographyDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Geography Teachers On YouTube";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -470,7 +554,7 @@ selection.onchange = function () {
     secTwoPhysicsDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الفيزياء للصف الثاني الثانوي على اليوتيوب";
     secTowChemistryDescription.innerHTML =
-      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الكيمياء للصف القاني الثانوي على اليوتيوب";
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الكيمياء للصف الثاني الثانوي على اليوتيوب";
     secTowBioDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الأحياء للصف الثاني الثانوي على اليوتيوب";
     secTowMathDescription.innerHTML =
@@ -485,6 +569,35 @@ selection.onchange = function () {
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة التاريخ للصف الثاني الثانوي على اليوتيوب";
     secTowGeographyDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الجغرافيا للصف الثاني الثانوي على اليوتيوب";
+    secOnePhysics.innerHTML = "الفيزياء";
+    secOneChemistry.innerHTML = "الكيمياء";
+    secOneBio.innerHTML = "الأحياء";
+    secOneMath.innerHTML = "الرياضيات";
+    secOneEnglish.innerHTML = "اللغة الإنجليزية";
+    secOneFrench.innerHTML = "اللغة الفرنسية";
+    secOneArabic.innerHTML = "اللغة العربية";
+    secOneHistory.innerHTML = "التاريخ";
+    secOneGeography.innerHTML = "الجغرافيا";
+    secOneCourseDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم بعض كورسات اللغة الإنجليزية لتقوية معظم المهارات";
+    secOnePhysicsDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الفيزياء للصف الأول الثانوي على اليوتيوب";
+    secOneChemistryDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الكيمياء للصف الأول الثانوي على اليوتيوب";
+    secOneBioDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الأحياء للصف الأول الثانوي على اليوتيوب";
+    secOneMathDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الرياضيات للصف الأول الثانوي على اليوتيوب";
+    secOneEnglishDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإنجليزية للصف الأول الثانوي على اليوتيوب";
+    secOneFrenchDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الفرنسية للصف الأول الثانوي على اليوتيوب";
+    secOneArabicDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة العربية للصف الأول الثانوي على اليوتيوب";
+    secOneHistoryDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة التاريخ للصف الأول الثانوي على اليوتيوب";
+    secOneGeographyDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الجغرافيا للصف الأول الثانوي على اليوتيوب";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
@@ -613,6 +726,35 @@ if (window.localStorage.getItem("lang")) {
       "A Large Group of Links including the best Secondary Two History Teachers On YouTube";
     secTowGeographyDescription.innerHTML =
       "A Large Group of Links including the best Secondary Two Geography Teachers On YouTube";
+    secOnePhysics.innerHTML = "Physics";
+    secOneChemistry.innerHTML = "Chemistry";
+    secOneBio.innerHTML = "Biology";
+    secOneMath.innerHTML = "Math";
+    secOneEnglish.innerHTML = "English";
+    secOneFrench.innerHTML = "French";
+    secOneArabic.innerHTML = "Arabic";
+    secOneHistory.innerHTML = "History";
+    secOneGeography.innerHTML = "Geography";
+    secOneCourseDescription.innerHTML =
+      "A Large Group of links includes some English language courses to strengthen most skills";
+    secOnePhysicsDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Physics Teachers On YouTube";
+    secOneChemistryDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Chemistry Teachers On YouTube";
+    secOneBioDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Biology Teachers On YouTube";
+    secOneMathDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Math Teachers On YouTube";
+    secOneEnglishDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One English Language Teachers On YouTube";
+    secOneFrenchDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One French Language Teachers On YouTube";
+    secOneArabicDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Arabic Language Teachers On YouTube";
+    secOneHistoryDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One History Teachers On YouTube";
+    secOneGeographyDescription.innerHTML =
+      "A Large Group of Links including the best Secondary One Geography Teachers On YouTube";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -719,7 +861,7 @@ if (window.localStorage.getItem("lang")) {
     secTwoPhysicsDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الفيزياء للصف الثاني الثانوي على اليوتيوب";
     secTowChemistryDescription.innerHTML =
-      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الكيمياء للصف القاني الثانوي على اليوتيوب";
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الكيمياء للصف الثاني الثانوي على اليوتيوب";
     secTowBioDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الأحياء للصف الثاني الثانوي على اليوتيوب";
     secTowMathDescription.innerHTML =
@@ -734,6 +876,35 @@ if (window.localStorage.getItem("lang")) {
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة التاريخ للصف الثاني الثانوي على اليوتيوب";
     secTowGeographyDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الجغرافيا للصف الثاني الثانوي على اليوتيوب";
+    secOnePhysics.innerHTML = "الفيزياء";
+    secOneChemistry.innerHTML = "الكيمياء";
+    secOneBio.innerHTML = "الأحياء";
+    secOneMath.innerHTML = "الرياضيات";
+    secOneEnglish.innerHTML = "اللغة الإنجليزية";
+    secOneFrench.innerHTML = "اللغة الفرنسية";
+    secOneArabic.innerHTML = "اللغة العربية";
+    secOneHistory.innerHTML = "التاريخ";
+    secOneGeography.innerHTML = "الجغرافيا";
+    secOneCourseDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم بعض كورسات اللغة الإنجليزية لتقوية معظم المهارات";
+    secOnePhysicsDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الفيزياء للصف الأول الثانوي على اليوتيوب";
+    secOneChemistryDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الكيمياء للصف الأول الثانوي على اليوتيوب";
+    secOneBioDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الأحياء للصف الأول الثانوي على اليوتيوب";
+    secOneMathDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الرياضيات للصف الأول الثانوي على اليوتيوب";
+    secOneEnglishDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الإنجليزية للصف الأول الثانوي على اليوتيوب";
+    secOneFrenchDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة الفرنسية للصف الأول الثانوي على اليوتيوب";
+    secOneArabicDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة اللغة العربية للصف الأول الثانوي على اليوتيوب";
+    secOneHistoryDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة التاريخ للصف الأول الثانوي على اليوتيوب";
+    secOneGeographyDescription.innerHTML =
+      "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الجغرافيا للصف الأول الثانوي على اليوتيوب";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
