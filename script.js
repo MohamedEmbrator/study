@@ -180,11 +180,52 @@ let secThreeGeologyDescription = document.querySelector(
 let secThreeCourseDescription = document.querySelector(
   ".articles .box:nth-child(14) .content p"
 );
-let secTwoDirection = document.querySelectorAll(".secondary-two .box .info");
+let secTowPhysics = document.querySelector(".secondary-two .box .content h3");
+let secTwoPhysicsDescription = document.querySelector(
+  ".secondary-two .box .content p"
+);
+let secTowChemistry = document.querySelector(".secondary-two .box:nth-child(2) .content h3");
+let secTowChemistryDescription = document.querySelector(
+  ".secondary-two .box:nth-child(2) .content p"
+);
+let secTowBio = document.querySelector(".secondary-two .box:nth-child(3) .content h3");
+let secTowBioDescription = document.querySelector(
+  ".secondary-two .box:nth-child(3) .content p"
+);
+let secTowMath = document.querySelector(".secondary-two .box:nth-child(4) .content h3");
+let secTowMathDescription = document.querySelector(
+  ".secondary-two .box:nth-child(4) .content p"
+);
+let secTowEnglish = document.querySelector(".secondary-two .box:nth-child(5) .content h3");
+let secTowEnglishDescription = document.querySelector(
+  ".secondary-two .box:nth-child(5) .content p"
+);
+let secTowFrench = document.querySelector(".secondary-two .box:nth-child(5) .content h3");
+let secTowFrenchDescription = document.querySelector(
+  ".secondary-two .box:nth-child(5) .content p"
+);
+let secTowArabic = document.querySelector(".secondary-two .box:nth-child(6) .content h3");
+let secTowArabicDescription = document.querySelector(
+  ".secondary-two .box:nth-child(6) .content p"
+);
+let secTowHistory = document.querySelector(".secondary-two .box:nth-child(7) .content h3");
+let secTowHistoryDescription = document.querySelector(
+  ".secondary-two .box:nth-child(7) .content p"
+);
+let secTowGeography = document.querySelector(".secondary-two .box:nth-child(8) .content h3");
+let secTowGeographyDescription = document.querySelector(
+  ".secondary-two .box:nth-child(8) .content p"
+);
+let secTowCourseDescription = document.querySelector(
+  ".secondary-two .box:nth-child(9) .content p"
+);
 let arrows = document.querySelectorAll(".box .info i");
 let boxReadMore = document.querySelectorAll(".box .info a");
 let form = document.querySelector(".landing .container form");
 let secThreeMainTitle = document.querySelector(".articles > .main-title");
+let secTwoMainTitle = document.querySelector(".secondary-two .main-title");
+let secOneMainTitle = document.querySelector(".secondary-one .main-title");
+
 selection.onchange = function () {
   window.localStorage.setItem("lang", selection.value);
   if (window.localStorage.getItem("lang") === "en") {
@@ -273,6 +314,10 @@ selection.onchange = function () {
       "A Large Group of Links including the best Secondary Three Geology Teachers On YouTube";
     secThreeCourseDescription.innerHTML =
       "A Large Group of links includes some English language courses to strengthen most skills";
+    secTwoMainTitle.innerHTML = "Online Lessons | Secondary Two";
+    secTwoMainTitle.style.textTransform = "capitalize";
+    secOneMainTitle.innerHTML = "Online Lessons | Secondary One";
+    secOneMainTitle.style.textTransform = "capitalize";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -364,6 +409,8 @@ selection.onchange = function () {
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الجيولوجيا للصف الثالث الثانوي على اليوتيوب";
     secThreeCourseDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم بعض كورسات اللغة الإنجليزية لتقوية معظم المهارات";
+    secTwoMainTitle.innerHTML = "الدروس الأونلاين | الثاني الثانوي";
+    secOneMainTitle.innerHTML = "الدروس الأونلاين | الأول الثانوي";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
@@ -459,12 +506,15 @@ if (window.localStorage.getItem("lang")) {
       "A Large Group of Links including the best Secondary Three Geology Teachers On YouTube";
     secThreeCourseDescription.innerHTML =
       "A Large Group of links includes some English language courses to strengthen most skills";
+    secTwoMainTitle.innerHTML = "Online Lessons | Secondary Two";
+    secTwoMainTitle.style.textTransform = "capitalize";
+    secOneMainTitle.innerHTML = "Online Lessons | Secondary One";
+    secOneMainTitle.style.textTransform = "capitalize";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
       boxReadMore[i].innerHTML = "Read More";
     }
-    secThreePhysics.innerHTML = "Physics";
   } else if (window.localStorage.getItem("lang") === "ar") {
     document.body.style.direction = "rtl";
     document.title = "منصة Cactu's EduLife | الصفحة الرئيسية";
@@ -550,6 +600,8 @@ if (window.localStorage.getItem("lang")) {
       "مجموعة كبيرة من الروابط تضم أفضل معلمين مادة الجيولوجيا للصف الثالث الثانوي على اليوتيوب";
     secThreeCourseDescription.innerHTML =
       "مجموعة كبيرة من الروابط تضم بعض كورسات اللغة الإنجليزية لتقوية معظم المهارات";
+    secTwoMainTitle.innerHTML = "الدروس الأونلاين | الثاني الثانوي";
+    secOneMainTitle.innerHTML = "الدروس الأونلاين | الأول الثانوي";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
