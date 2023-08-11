@@ -364,7 +364,7 @@ selection.onchange = function () {
     document.body.style.direction = "ltr";
     document.title = "Cactu's EduLife Platform | Home Page";
     landingTitle.innerHTML = "Welcome To The Cactu's EduLife Platform";
-    logo.innerHTML = "Cactu's EduLife Platform";
+    logo.innerHTML = "Cactu's EduLife";
     schoolBooksHome.innerHTML = "School Books";
     schoolBooksHome.style.margin = "0 15px 0 0";
     platformDescription.innerHTML =
@@ -731,7 +731,7 @@ if (window.localStorage.getItem("lang")) {
     document.body.style.direction = "ltr";
     document.title = "Cactu's EduLife Platform | Home Page";
     landingTitle.innerHTML = "Welcome To The Cactu's EduLife Platform";
-    logo.innerHTML = "Cactu's EduLife Platform";
+    logo.innerHTML = "Cactu's EduLife";
     platformDescription.innerHTML =
       "The Cactu's EduLife Platform is a sophisticated and practical platform that will help you in your studies, and you will find books and notes for all levels of study, whether you are in Al-Azhar or Global Education, and you will find links to many teachers in all subjects on YouTube without having to waste time searching for them";
     foreignBooks.innerHTML = "Extra Books";
