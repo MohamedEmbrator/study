@@ -536,7 +536,7 @@ selection.onchange = function () {
     footerDescription.innerHTML =
       "This Platform was built carefully with the aim of saving students time in searching for anything related to studying and facilitating the means of studying for them.";
     copyRights.innerHTML =
-      "All Copyrights Reserved &copy;@<span>Mohamed Embrator And Rokaya Zaki</span><sub>2023</sub>";
+      "All Copyrights Reserved &copy;@<span>Mohamed Embrator</span><sub>2023</sub>";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -716,7 +716,7 @@ selection.onchange = function () {
     footerDescription.innerHTML =
       "تم بناء هذه المنصة بعناية وبغرض توفير الوقت على الطلاب في البحث عن أي شيئ يخص الدراسة وتسهيل وسائل الدراسة لهم.";
     copyRights.innerHTML =
-      "جميع الحقوق محفوظة لدى © <sub>2023</sub><span>Mohamed Embrator And Rokaya Zaki</span>";
+      "جميع الحقوق محفوظة لدى © <sub>2023</sub><span>Mohamed Embrator</span>";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
@@ -903,7 +903,7 @@ if (window.localStorage.getItem("lang")) {
     footerDescription.innerHTML =
       "This Platform was built carefully with the aim of saving students time in searching for anything related to studying and facilitating the means of studying for them.";
     copyRights.innerHTML =
-      "All Copyrights Reserved &copy;@<span>Mohamed Embrator And Rokaya Zaki</span><sub>2023</sub>";
+      "All Copyrights Reserved &copy;@<span>Mohamed Embrator</span><sub>2023</sub>";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-left");
       arrows[i].classList.add("fa-arrow-right");
@@ -1082,7 +1082,7 @@ if (window.localStorage.getItem("lang")) {
     footerDescription.innerHTML =
       "تم بناء هذه المنصة بعناية وبغرض توفير الوقت على الطلاب في البحث عن أي شيئ يخص الدراسة وتسهيل وسائل الدراسة لهم.";
     copyRights.innerHTML =
-      "جميع الحقوق محفوظة لدى © <sub>2023</sub><span>Mohamed Embrator And Rokaya Zaki</span>";
+      "جميع الحقوق محفوظة لدى © <sub>2023</sub><span>Mohamed Embrator</span>";
     for (let i = 0; i <= arrows.length; i++) {
       arrows[i].classList.remove("fa-arrow-right");
       arrows[i].classList.add("fa-arrow-left");
