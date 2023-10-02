@@ -545,13 +545,13 @@ selection.onchange = function () {
   } else if (window.localStorage.getItem("lang") === "ar") {
     selection.value = window.localStorage.getItem("lang");
     document.body.style.direction = "rtl";
-    document.title = "منصة Cactu's EduLife | الصفحة الرئيسية";
-    landingTitle.innerHTML = "مرحباً بكم في منصة Cactu's EduLife";
-    logo.innerHTML = "منصة Cactu's EduLife";
+    document.title = "منصة المتفوقين | الصفحة الرئيسية";
+    landingTitle.innerHTML = "مرحباً بكم في منصة المتفوقين";
+    logo.innerHTML = "منصة المتفوقين";
     schoolBooksHome.innerHTML = "الكتب المدرسية";
     schoolBooksHome.style.margin = "0 0 0 15px";
     platformDescription.innerHTML =
-      "منصة Cactu's EduLife هي منصة متطورة وعملية وستساعدك في دراستك وسوف تجد فيها كتب ومذكرات لجميع المراحل الدراسية سواء كنت في الأزهر أو التربية والتعليم وسوف تجد روابط لمعلمين كثر في جميع المواد على اليوتيوب بدون أن تضطر لتضييع الوقت في البحث عنهم";
+      "منصة المتفوقين هي منصة متطورة وعملية وستساعدك في دراستك وسوف تجد فيها كتب ومذكرات لجميع المراحل الدراسية سواء كنت في الأزهر أو التربية والتعليم وسوف تجد روابط لمعلمين كثر في جميع المواد على اليوتيوب بدون أن تضطر لتضييع الوقت في البحث عنهم";
     foreignBooks.innerHTML = "الكتب الخارجية";
     notes.innerHTML = "الملازم والمذكرات";
     tips.innerHTML = "منوع";
