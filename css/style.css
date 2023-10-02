@@ -21,9 +21,6 @@ header.header .container nav > div:first-child > div > ul {
 header.header .container nav > div:nth-child(2) > div > ul {
   right: 0;
 }
-header.header .container nav > div:nth-child(3) > div > ul {
-  right: 0;
-}
 
 * {
   -webkit-box-sizing: border-box;
