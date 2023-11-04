@@ -47,11 +47,7 @@ window.onscroll = function () {
     navigatin.classList.remove("fixed");
   }
   if (window.scrollY >= 600) {
-    if (window.innerWidth <= 450) {
-      scrollButton.style.display = "none";
-    } else {
-      scrollButton.style.display = "flex";
-    }
+    scrollButton.style.display = "flex";
   } else {
     scrollButton.style.display = "none";
   }
