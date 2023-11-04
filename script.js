@@ -22,21 +22,11 @@ allNavDivs.forEach(function (ele) {
   };
 });
 
-btn.onclick = function () {
-  window.scrollTo({
-    left: 0,
-    top: 0,
-    behavior: "smooth"
-  });
-};
 
 let toggleBtn = document.getElementById("btn");
 let navBar = document.getElementById("nav");
 toggleBtn.addEventListener("click", function () {
   navBar.classList.toggle("show");
-});
-btn.addEventListener("click", function () {
-  navigationBar.classList.toggle("show");
 });
 const totalHeight = document.body.scrollHeight - window.innerHeight;
 const scrollProgressDiv = document.querySelector(".scroll-height > div");
