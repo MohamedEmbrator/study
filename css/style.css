@@ -1,27 +1,3 @@
-.landing .container form input[type="submit"] {
-  height: 40px;
-  width: 80px;
-  background-color: var(--main-color);
-  border: none;
-  font-size: 18px;
-  z-index: 2;
-  font-weight: bold;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  color: #fff;
-  cursor: pointer;
-}
-header.header .container nav > div:last-child > div > ul {
-  left: 0;
-}
-header.header .container nav > div:first-child > div > ul {
-  right: 0;
-}
-header.header .container nav > div:nth-child(2) > div > ul {
-  right: 0;
-}
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -57,7 +33,56 @@ a {
 html {
   scroll-behavior: smooth;
 }
-
+button.scroll {
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  /* display: none; */
+  z-index: 100000;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+button.scroll:hover {
+  background-color: var(--sec-three-color);
+}
+.scroll-height {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  display: none;
+  background-color: #ffeb3b87;
+  height: 5px;
+  direction: ltr;
+  z-index: 5000000;
+}
+.scroll-height > div {
+  direction: ltr;
+  height: 100%;
+  background-color: #ffb900;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -422,6 +447,15 @@ header.header .container nav > div > .active {
 header.header .container nav > div > .active > ul {
   display: flex;
 }
+header.header .container nav > div:last-child > div > ul {
+  left: 0;
+}
+header.header .container nav > div:first-child > div > ul {
+  right: 0;
+}
+header.header .container nav > div:nth-child(2) > div > ul {
+  right: 0;
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   header.header .container {
     flex-direction: column;
@@ -556,6 +590,21 @@ header.header .container > nav.nav.show {
   -webkit-appearance: none;
   appearance: none;
 }
+.landing .container form input[type="submit"] {
+  height: 40px;
+  width: 80px;
+  background-color: var(--main-color);
+  border: none;
+  font-size: 18px;
+  z-index: 2;
+  font-weight: bold;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
 
 
 @media (max-width: 767px) {
