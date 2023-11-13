@@ -77,11 +77,6 @@ button.scroll:hover {
   direction: ltr;
   height: 100%;
   background-color: #ffb900;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 .container {
   padding-left: 15px;
