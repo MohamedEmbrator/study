@@ -71,12 +71,17 @@ button.scroll:hover {
   background-color: #ffeb3b87;
   height: 5px;
   direction: ltr;
-  z-index: 5000000;
+  z-index: 9999;
 }
 .scroll-height > div {
   direction: ltr;
   height: 100%;
   background-color: #ffb900;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 .container {
   padding-left: 15px;
@@ -338,7 +343,7 @@ header.header.fixed {
 header.header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 header.header .container .logo {
@@ -445,24 +450,12 @@ header.header .container nav > div > .active > ul {
 header.header .container nav > div:last-child > div > ul {
   left: 0;
 }
-header.header .container nav > div:first-child > div > ul {
-  right: 0;
-}
-header.header .container nav > div:nth-child(2) > div > ul {
-  right: 0;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  header.header .container {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
 @media (min-width: 768px) and (max-width: 991px) {
-  header.header .container .logo {
+  /* header.header .container .logo {
     display: none;
-  }
+  } */
   header.header .container {
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
@@ -482,6 +475,9 @@ header.header .container nav > div:nth-child(2) > div > ul {
 }
 
 @media (max-width: 767px) {
+  header.header .container {
+    justify-content: space-between;
+  }
   header.header .container button {
     display: block;
     margin-left: 10px;
