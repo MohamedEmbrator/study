@@ -22,7 +22,6 @@ allNavDivs.forEach(function (ele) {
   };
 });
 
-
 let toggleBtn = document.getElementById("btn");
 let navBar = document.getElementById("nav");
 toggleBtn.addEventListener("click", function () {
@@ -49,12 +48,10 @@ window.onscroll = function () {
   }
   scrollProgressDiv.style.width = `${progressHeight}%`;
 };
-scrollProgress.style.top = `${
-  document.querySelector("header.header").offsetHeight
-}px`;
+scrollProgress.style.top = `${document.querySelector("header").offsetHeight}px`;
 window.onresize = function () {
   scrollProgress.style.top = `${
-    document.querySelector("header.header").offsetHeight
+    document.querySelector("header").offsetHeight
   }px`;
 };
 scrollButton.addEventListener("click", function () {
@@ -62,5 +59,30 @@ scrollButton.addEventListener("click", function () {
     left: 0,
     top: 0,
     behavior: "smooth"
+  });
+});
+
+const onlineMessage = document.querySelector(".online");
+const offlineMessage = document.querySelector(".offline");
+const connectionButton = document.querySelectorAll(".close");
+
+window.addEventListener("online", function () {
+  onlineMessage.style.display = "flex";
+  offlineMessage.style.display = "none";
+  setTimeout(function () {
+    if (onlineMessage.style.display === "flex") {
+      onlineMessage.style.display = "none";
+    } else {
+      onlineMessage.style.display = "flex";
+    }
+  }, 10000);
+});
+window.addEventListener("offline", function () {
+  onlineMessage.style.display = "none";
+  offlineMessage.style.display = "flex";
+});
+connectionButton.forEach(function (el) {
+  addEventListener("click", function () {
+    el.parentElement.style.display = "none";
   });
 });
