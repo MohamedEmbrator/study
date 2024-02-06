@@ -154,7 +154,7 @@ button.scroll:hover {
   cursor: pointer;
 }
 .online button i,
-.offline button i{
+.offline button i {
   font-size: 25px;
   color: #fff;
   font-weight: 300;
@@ -412,6 +412,24 @@ header.header {
   width: 100vw;
   max-width: 100%;
   z-index: 10000;
+  animation: header 1s;
+  -webkit-animation: header 1s;
+}
+@keyframes header {
+  0% {
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
 }
 header.header.fixed {
   background-color: rgba(34, 34, 34, 0.85);
@@ -672,11 +690,9 @@ header.header .container > nav.nav.show {
   cursor: pointer;
 }
 
-
-
 @media (max-width: 767px) {
   .landing {
-  padding: 160px 0 120px 0
+    padding: 160px 0 120px 0;
   }
   .landing .container h1 {
     line-height: 1.6;
@@ -1242,7 +1258,7 @@ footer > p > span:last-child {
   }
 
   footer .container .footer-title span {
-font-size: 15px;
+    font-size: 15px;
   }
   footer > p:last-child {
     font-size: 14px;
